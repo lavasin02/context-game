@@ -334,14 +334,28 @@ function updateDisplay() {
         
         const hint = game.getHint(index + 1);
         
+        // Determine score category
+        let scoreCategory;
+        if (guess.score === 1) {
+            scoreCategory = "1";
+        } else if (guess.score < 20) {
+            scoreCategory = "close";
+        } else if (guess.score < 40) {
+            scoreCategory = "warm";
+        } else if (guess.score < 60) {
+            scoreCategory = "cold";
+        } else {
+            scoreCategory = "far";
+        }
+        
         guessItem.innerHTML = `
-            <div>
+            <div class="guess-item-content">
                 <strong>${guess.player.name}</strong>
                 <br>
                 <small>${GAME_MODES[currentMode].playerDisplay(guess.player)}</small>
                 ${hint ? `<br><small class="hint">💡 Hint: ${hint}</small>` : ''}
             </div>
-            <div class="feedback-number">${guess.score}</div>
+            <div class="feedback-number" data-score="${scoreCategory}">${guess.score}</div>
         `;
         guessesList.appendChild(guessItem);
     });
@@ -510,18 +524,20 @@ function updateGameStatus(similarity) {
     const feedback = document.createElement('div');
     feedback.className = 'game-feedback';
     
+    let message;
     if (similarity === 1) {
-        feedback.innerHTML = '🎉 Perfect Match! 🎉';
+        message = '🎯 Perfect Match!';
     } else if (similarity < 20) {
-        feedback.innerHTML = '🔥 Super Close!';
+        message = '🔥 Very Close! (< 20)';
     } else if (similarity < 40) {
-        feedback.innerHTML = '👍 Getting Warmer!';
+        message = '👍 Getting Warmer (< 40)';
     } else if (similarity < 60) {
-        feedback.innerHTML = '🤔 Keep Trying!';
+        message = '🤔 Try Different Players (< 60)';
     } else {
-        feedback.innerHTML = '❄️ Cold...';
+        message = '❄️ Not Close (> 60)';
     }
     
+    feedback.innerHTML = message;
     document.querySelector('.guess-section').appendChild(feedback);
     setTimeout(() => feedback.remove(), 2000);
 }

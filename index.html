@@ -2,30 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contextinho - Player Guessing Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#121212">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Contextinho</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="nav-bar">
-            <button onclick="goBack()" class="nav-btn back-btn">←</button>
+            <button onclick="goBack()" class="nav-btn">←</button>
             <h1>Contextinho</h1>
-            <button onclick="showModeSelect()" class="nav-btn home-btn">⌂</button>
+            <button onclick="showModeSelect()" class="nav-btn">⌂</button>
         </div>
         
         <div id="mode-select" class="screen active">
-            <h2>Select Game Mode</h2>
+            <h2>Select Mode</h2>
             <div class="mode-buttons">
-                <button onclick="selectMode('football')" class="btn mode-btn">
+                <button onclick="selectMode('football')" class="mode-btn">
                     <span>⚽</span>
                     Football Stars
                 </button>
-                <button onclick="selectMode('cricket')" class="btn mode-btn">
+                <button onclick="selectMode('cricket')" class="mode-btn">
                     <span>🏏</span>
                     Cricket Heroes
                 </button>
-                <button onclick="selectMode('bollywood')" class="btn mode-btn">
+                <button onclick="selectMode('bollywood')" class="mode-btn">
                     <span>🎬</span>
                     Bollywood Magic
                 </button>
@@ -36,10 +39,10 @@
             <h2>How to Play</h2>
             <div class="game-rules">
                 <ul>
-                    <li>You have 10 attempts to guess the correct player</li>
-                    <li>After each guess, you'll receive a similarity score</li>
-                    <li>Lower scores mean you're getting closer</li>
-                    <li>Score of 1 means you've found the player</li>
+                    <li>You have 10 attempts to guess the player</li>
+                    <li>Each guess gives you a similarity score</li>
+                    <li>Lower scores mean you're closer</li>
+                    <li>Score of 1 means you've won</li>
                 </ul>
             </div>
             <button onclick="startGame()" class="btn">Start Game</button>
@@ -48,30 +51,27 @@
         <div id="game-play" class="screen">
             <div id="game-status">
                 <div class="status-item">
-                    <span class="status-label">Attempts Left:</span>
-                    <span id="tries-left" class="status-value">10</span>
+                    <div class="status-label">Attempts</div>
+                    <div id="tries-left" class="status-value">10</div>
                 </div>
                 <div class="status-item">
-                    <span class="status-label">Guess:</span>
-                    <span id="guess-number" class="status-value">1</span>
+                    <div class="status-label">Guess</div>
+                    <div id="guess-number" class="status-value">1</div>
                 </div>
             </div>
             
             <div class="guess-section">
-                <label for="player-guess">Search Player:</label>
-                <div class="search-box">
-                    <input type="text" 
-                           id="player-guess" 
-                           list="players-list" 
-                           placeholder="Type at least 3 letters"
-                           autocomplete="off">
-                </div>
+                <input type="text" 
+                       id="player-guess" 
+                       list="players-list" 
+                       placeholder="Type player name (3+ letters)"
+                       autocomplete="off"
+                       autocapitalize="off">
                 <datalist id="players-list"></datalist>
-                <button onclick="submitGuess()" class="btn">Submit Guess</button>
+                <button onclick="submitGuess()" class="btn">Make Guess</button>
             </div>
 
-            <div id="guess-history" class="history-box">
-                <h3>Previous Guesses</h3>
+            <div class="history-box">
                 <div id="guesses-list"></div>
             </div>
 
