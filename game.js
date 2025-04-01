@@ -372,32 +372,71 @@ function endGame(won) {
     const targetInfo = game.targetPlayer.attributes;
     
     if (won) {
-        document.getElementById('result-message').textContent = "🎉 Congratulations! You guessed correctly! 🎊";
+        document.getElementById('result-message').innerHTML = `
+            <div>🎉 Congratulations!</div>
+            <div style="font-size: 24px; opacity: 0.9; margin-top: 8px;">
+                You found the player in ${10 - game.triesLeft} tries!
+            </div>
+        `;
         playSound('success');
         createConfetti();
     } else {
-        document.getElementById('result-message').textContent = "Game Over! Here's who you were looking for:";
+        document.getElementById('result-message').innerHTML = `
+            <div>Game Over!</div>
+            <div style="font-size: 24px; opacity: 0.9; margin-top: 8px;">
+                The player was:
+            </div>
+        `;
         playSound('gameOver');
     }
     
     const statBars = GAME_MODES[currentMode].statBars;
-    const statBarsHtml = statBars.map(stat => `
-        <div class="stat-bar">
-            <label>${stat.charAt(0).toUpperCase() + stat.slice(1)}</label>
-            <div class="bar" style="width: ${targetInfo.stats[stat]}%">${targetInfo.stats[stat]}</div>
-        </div>
-    `).join('');
+    const statBarsHtml = statBars.map(stat => {
+        const value = targetInfo.stats[stat];
+        const statName = stat.charAt(0).toUpperCase() + stat.slice(1).replace(/_/g, ' ');
+        return `
+            <div class="stat-bar">
+                <label>${statName}</label>
+                <div class="bar" style="width: ${value}%" data-value="${value}"></div>
+            </div>
+        `;
+    }).join('');
 
     document.getElementById('correct-answer').innerHTML = `
         <div class="player-reveal">
             <h3>${game.targetPlayer.name}</h3>
             <div class="player-stats">
-                <p><strong>Role:</strong> ${currentMode === 'football' ? targetInfo.positions.join(', ') : targetInfo.role}</p>
-                <p><strong>Nationality:</strong> ${targetInfo.nationality}</p>
-                <p><strong>Age:</strong> ${targetInfo.age}</p>
+                <p>
+                    <strong>Role</strong>
+                    ${currentMode === 'football' ? targetInfo.positions.join(', ') : targetInfo.role}
+                </p>
+                <p>
+                    <strong>Nationality</strong>
+                    ${targetInfo.nationality}
+                </p>
+                <p>
+                    <strong>Age</strong>
+                    ${targetInfo.age} years
+                </p>
                 ${currentMode === 'cricket' ? `
-                    <p><strong>Batting Style:</strong> ${targetInfo.batting_style}</p>
-                    <p><strong>Bowling Style:</strong> ${targetInfo.bowling_style}</p>
+                    <p>
+                        <strong>Batting Style</strong>
+                        ${targetInfo.batting_style}
+                    </p>
+                    <p>
+                        <strong>Bowling Style</strong>
+                        ${targetInfo.bowling_style}
+                    </p>
+                ` : ''}
+                ${currentMode === 'bollywood' ? `
+                    <p>
+                        <strong>Movies</strong>
+                        ${targetInfo.movie_count}
+                    </p>
+                    <p>
+                        <strong>Rating Points</strong>
+                        ${targetInfo.rating_sum}
+                    </p>
                 ` : ''}
                 <div class="stat-bars">
                     ${statBarsHtml}
@@ -405,31 +444,35 @@ function endGame(won) {
             </div>
         </div>
     `;
+
+    // Animate stat bars
+    setTimeout(() => {
+        document.querySelectorAll('.stat-bar .bar').forEach(bar => {
+            const value = bar.getAttribute('data-value');
+            bar.style.width = value + '%';
+        });
+    }, 100);
 }
 
 function createConfetti() {
-    for (let i = 0; i < 50; i++) {
+    const colors = [
+        'var(--primary-color)',
+        'var(--secondary-color)',
+        '#ffffff',
+        '#ffeb3b',
+        '#ff9800'
+    ];
+    
+    for (let i = 0; i < 100; i++) {
         const confetti = document.createElement('div');
         confetti.className = 'confetti';
         confetti.style.left = Math.random() * 100 + 'vw';
-        confetti.style.top = -10 + 'px';
-        confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+        confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        confetti.style.opacity = Math.random() * 0.5 + 0.5;
+        confetti.style.transform = `scale(${Math.random() * 0.5 + 0.5})`;
         document.body.appendChild(confetti);
         
-        let position = -10;
-        const fall = setInterval(() => {
-            position += 2;
-            confetti.style.top = position + 'px';
-            if (position > window.innerHeight) {
-                clearInterval(fall);
-                confetti.remove();
-            }
-        }, 10);
-        
-        setTimeout(() => {
-            clearInterval(fall);
-            confetti.remove();
-        }, 5000);
+        confetti.addEventListener('animationend', () => confetti.remove());
     }
 }
 
