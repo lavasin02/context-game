@@ -81,54 +81,9 @@ const GAME_MODES = {
 let currentMode = null;
 let game = null;
 
-const MASCOTS = {
-    football: {
-        image: `<svg viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="40" fill="#fff"/>
-            <path d="M30,50 C30,30 70,30 70,50 C70,70 30,70 30,50" fill="#000"/>
-            <circle cx="40" cy="40" r="5" fill="#000"/>
-            <circle cx="60" cy="40" r="5" fill="#000"/>
-        </svg>`,
-        messages: [
-            "Can you guess who I am?",
-            "Nice try! Keep going!",
-            "You're getting closer!",
-            "That's the spirit!"
-        ]
-    },
-    cricket: {
-        image: `<svg viewBox="0 0 100 100">
-            <rect x="20" y="20" width="60" height="60" rx="10" fill="#fff"/>
-            <circle cx="40" cy="45" r="5" fill="#000"/>
-            <circle cx="60" cy="45" r="5" fill="#000"/>
-            <path d="M35,65 Q50,75 65,65" fill="none" stroke="#000" stroke-width="3"/>
-        </svg>`,
-        messages: [
-            "Howzat! Try again!",
-            "Good shot!",
-            "Keep your eye on the ball!",
-            "What a player!"
-        ]
-    },
-    bollywood: {
-        image: `<svg viewBox="0 0 100 100">
-            <path d="M50,20 L61,44 L87,44 L65,59 L74,83 L50,67 L26,83 L35,59 L13,44 L39,44 Z" fill="#fff"/>
-            <circle cx="40" cy="40" r="5" fill="#000"/>
-            <circle cx="60" cy="40" r="5" fill="#000"/>
-            <path d="M35,60 Q50,70 65,60" fill="none" stroke="#000" stroke-width="3"/>
-        </svg>`,
-        messages: [
-            "Lights, Camera, Guess!",
-            "What a performance!",
-            "You're a rising star!",
-            "Action!"
-        ]
-    }
-};
-
 const SOUNDS = {
     click: new Audio('data:audio/mp3;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4LjI5LjEwMAAAAAAAAAAAAAAA//tQwAAAAAAAAAAAAAAAAAAAAAAASW5mbwAAAA8AAAADAAAGhgBVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVWqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr///////////////////////////////////////////8AAAAATGF2YzU4LjU0AAAAAAAAAAAAAAAAJAAAAAAAAAAAAYbUjEkLAAAA//tQxAAAAAAJIAAAAgAAA0gAAAABN4AJBAABAAAH8EBgYBAEAgD4P/E/gg//B8H/gg//B8EAQD4Ig//B/4P/+D4P//6wcBAEAQcEAQBAEAQAAQDgQDg//g+D4IAgCDggCAP//B8HwQBAMAgGAQDH/+D4Pg+D4Pg4EAQBAEAQBAH//B8HwfB8HwQBAEAQBAEAQBAEAQBAEAQBAEAQBAEAQBAAAAA'),
-    success: new Audio('data:audio/mp3;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4LjI5LjEwMAAAAAAAAAAAAAAA//tQwAAAAAAAAAAAAAAAAAAAAAAASW5mbwAAAA8AAAADAAAGhgBVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVWqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr///////////////////////////////////////////8AAAAATGF2YzU4LjU0AAAAAAAAAAAAAAAAJAAAAAAAAAAAAYbV3YfWAAAA//tQxAAAAABGkAAAAgAAA0gAAABExYWFhYX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fWFhYWFhfX19fX19fX19fX19fX19fX19fX19fX19fX19fX19YWFhYWF9fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19Q=='),
+    success: new Audio('data:audio/mp3;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4LjI5LjEwMAAAAAAAAAAAAAAA//tQwAAAAAAAAAAAAAAAAAAAAAAASW5mbwAAAA8AAAADAAAGhgBVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVWqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr///////////////////////////////////////////8AAAAATGF2YzU4LjU0AAAAAAAAAAAAAAAAJAAAAAAAAAAAAYbV3YfWAAAA//tQxAAAAABGkAAAAgAAA0gAAABExYWFhYX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fWFhYWFhfX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19YWFhYWF9fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19Q=='),
     wrong: new Audio('data:audio/mp3;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4LjI5LjEwMAAAAAAAAAAAAAAA//tQwAAAAAAAAAAAAAAAAAAAAAAASW5mbwAAAA8AAAADAAAGhgBVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVWqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr///////////////////////////////////////////8AAAAATGF2YzU4LjU0AAAAAAAAAAAAAAAAJAAAAAAAAAAAAYbV3YfWAAAA//tQxAAAAABGkAAAAgAAA0gAAABExYWFhYX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fWFhYWFhfX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19YWFhYWF9fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19Q=='),
     hint: new Audio('data:audio/mp3;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4LjI5LjEwMAAAAAAAAAAAAAAA//tQwAAAAAAAAAAAAAAAAAAAAAAASW5mbwAAAA8AAAADAAAGhgBVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVWqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr///////////////////////////////////////////8AAAAATGF2YzU4LjU0AAAAAAAAAAAAAAAAJAAAAAAAAAAAAYbV3YfWAAAA//tQxAAAAABGkAAAAgAAA0gAAABExYWFhYX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fWFhYWFhfX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19YWFhYWF9fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19Q=='),
     gameOver: new Audio('data:audio/mp3;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4LjI5LjEwMAAAAAAAAAAAAAAA//tQwAAAAAAAAAAAAAAAAAAAAAAASW5mbwAAAA8AAAADAAAGhgBVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVWqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr///////////////////////////////////////////8AAAAATGF2YzU4LjU0AAAAAAAAAAAAAAAAJAAAAAAAAAAAAYbV3YfWAAAA//tQxAAAAABGkAAAAgAAA0gAAABExYWFhYX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fWFhYWFhfX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19YWFhYWF9fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19fX19Q==')
@@ -137,22 +92,43 @@ const SOUNDS = {
 function selectMode(mode) {
     currentMode = mode;
     document.body.className = `theme-${mode}`;
-    document.getElementById('scoring-criteria').innerHTML = GAME_MODES[mode].scoringCriteria;
-    
-    const loader = document.createElement('div');
-    loader.className = 'loading active';
-    document.body.appendChild(loader);
-    
-    setTimeout(() => {
-        showScreen('game-start');
-        loader.remove();
-        updateMascot("Let's play!");
+    showScreen('game-start');
+    playSound('click');
+}
+
+function showScreen(screenId) {
+    document.querySelectorAll('.screen').forEach(screen => {
+        screen.classList.remove('active');
+    });
+    document.getElementById(screenId).classList.add('active');
+}
+
+function startGame() {
+    if (!currentMode) {
+        alert('Please select a game mode first!');
+        showModeSelect();
+        return;
+    }
+    game = new Game(currentMode);
+    showScreen('game-play');
+    updateDisplay();
+    playSound('click');
+}
+
+function restartGame() {
+    if (confirm('Are you sure you want to start over?')) {
+        game = new Game(currentMode);
+        updateDisplay();
+        showScreen('game-play');
         playSound('click');
-    }, 1000);
+    }
 }
 
 function showModeSelect() {
+    currentMode = null;
+    game = null;
     showScreen('mode-select');
+    playSound('click');
 }
 
 function getHighestStat(stats) {
@@ -302,12 +278,6 @@ class Game {
     }
 }
 
-function startGame() {
-    game = new Game(currentMode);
-    showScreen('game-play');
-    updateDisplay();
-}
-
 function handleSearch(event) {
     const searchTerm = event.target.value.trim().toLowerCase();
     const datalist = document.getElementById('players-list');
@@ -350,6 +320,8 @@ function handleSearch(event) {
 }
 
 function updateDisplay() {
+    if (!game) return;
+    
     document.getElementById('tries-left').textContent = game.triesLeft;
     document.getElementById('guess-number').textContent = game.currentGuessNumber;
     
@@ -359,7 +331,6 @@ function updateDisplay() {
     game.guessHistory.forEach((guess, index) => {
         const guessItem = document.createElement('div');
         guessItem.className = 'guess-item';
-        const playerInfo = guess.player.attributes;
         
         const hint = game.getHint(index + 1);
         
@@ -377,15 +348,18 @@ function updateDisplay() {
 }
 
 function endGame(won) {
+    if (!game) return;
+    
     showScreen('game-over');
     const targetInfo = game.targetPlayer.attributes;
     
     if (won) {
+        document.getElementById('result-message').textContent = "🎉 Congratulations! You guessed correctly! 🎊";
         playSound('success');
-        updateMascot("Congratulations! You did it!");
+        createConfetti();
     } else {
+        document.getElementById('result-message').textContent = "Game Over! Here's who you were looking for:";
         playSound('gameOver');
-        updateMascot("Better luck next time!");
     }
     
     const statBars = GAME_MODES[currentMode].statBars;
@@ -416,15 +390,28 @@ function endGame(won) {
 }
 
 function createConfetti() {
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < 50; i++) {
         const confetti = document.createElement('div');
         confetti.className = 'confetti';
         confetti.style.left = Math.random() * 100 + 'vw';
-        confetti.style.animationDelay = Math.random() * 5 + 's';
+        confetti.style.top = -10 + 'px';
         confetti.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
         document.body.appendChild(confetti);
         
-        setTimeout(() => confetti.remove(), 5000);
+        let position = -10;
+        const fall = setInterval(() => {
+            position += 2;
+            confetti.style.top = position + 'px';
+            if (position > window.innerHeight) {
+                clearInterval(fall);
+                confetti.remove();
+            }
+        }, 10);
+        
+        setTimeout(() => {
+            clearInterval(fall);
+            confetti.remove();
+        }, 5000);
     }
 }
 
@@ -436,29 +423,14 @@ function playSound(type) {
     }
 }
 
-function updateMascot(message) {
-    const mascot = document.querySelector('.mascot');
-    if (!mascot) {
-        const newMascot = document.createElement('div');
-        newMascot.className = 'mascot';
-        newMascot.innerHTML = MASCOTS[currentMode].image;
-        document.body.appendChild(newMascot);
-    } else {
-        mascot.innerHTML = MASCOTS[currentMode].image;
-    }
-    
-    // Show mascot message
-    const messageBox = document.createElement('div');
-    messageBox.className = 'mascot-message';
-    messageBox.textContent = message || MASCOTS[currentMode].messages[Math.floor(Math.random() * MASCOTS[currentMode].messages.length)];
-    document.body.appendChild(messageBox);
-    
-    setTimeout(() => messageBox.remove(), 3000);
-}
-
 function submitGuess() {
     const guessInput = document.getElementById('player-guess');
     const playerName = guessInput.value.trim();
+    
+    if (!playerName) {
+        alert('Please enter a name!');
+        return;
+    }
     
     if (!GAME_MODES[currentMode].players.some(p => p.name === playerName)) {
         alert('Please select a valid player from the list');
@@ -466,16 +438,17 @@ function submitGuess() {
     }
 
     const similarity = game.makeGuess(playerName);
+    updateGameStatus(similarity);
+    
     if (similarity === 1) {
         playSound('success');
+        createConfetti();
         endGame(true);
         return;
     } else if (similarity > 50) {
         playSound('hint');
-        updateMascot("Getting closer!");
     } else {
         playSound('wrong');
-        updateMascot("Try again!");
     }
     
     game.currentGuessNumber++;
@@ -487,18 +460,92 @@ function submitGuess() {
     }
 }
 
-function showScreen(screenId) {
-    document.querySelectorAll('.screen').forEach(screen => {
-        screen.classList.remove('active');
-    });
-    document.getElementById(screenId).classList.add('active');
+function goBack() {
+    const activeScreen = document.querySelector('.screen.active');
+    const screenId = activeScreen.id;
+    
+    switch(screenId) {
+        case 'game-start':
+            showModeSelect();
+            break;
+        case 'game-play':
+            if (confirm('Are you sure you want to go back? Your progress will be lost.')) {
+                showScreen('game-start');
+            }
+            break;
+        case 'game-over':
+            showScreen('game-play');
+            break;
+        default:
+            break;
+    }
+    playSound('click');
 }
 
-document.getElementById('player-guess').addEventListener('input', handleSearch);
+function clearSearch() {
+    const input = document.getElementById('player-guess');
+    input.value = '';
+    input.focus();
+}
+
+function shareScore() {
+    const score = game.triesLeft;
+    const mode = currentMode.charAt(0).toUpperCase() + currentMode.slice(1);
+    const text = `🎮 Contextinho!\n${mode} Mode\n🎯 Found in ${10 - score} tries\n\nPlay now at [game-url]`;
+    
+    if (navigator.share) {
+        navigator.share({
+            title: 'Contextinho Score',
+            text: text
+        }).catch(console.error);
+    } else {
+        // Fallback copy to clipboard
+        navigator.clipboard.writeText(text)
+            .then(() => alert('Score copied to clipboard!'))
+            .catch(console.error);
+    }
+}
+
+function updateGameStatus(similarity) {
+    const feedback = document.createElement('div');
+    feedback.className = 'game-feedback';
+    
+    if (similarity === 1) {
+        feedback.innerHTML = '🎉 Perfect Match! 🎉';
+    } else if (similarity < 20) {
+        feedback.innerHTML = '🔥 Super Close!';
+    } else if (similarity < 40) {
+        feedback.innerHTML = '👍 Getting Warmer!';
+    } else if (similarity < 60) {
+        feedback.innerHTML = '🤔 Keep Trying!';
+    } else {
+        feedback.innerHTML = '❄️ Cold...';
+    }
+    
+    document.querySelector('.guess-section').appendChild(feedback);
+    setTimeout(() => feedback.remove(), 2000);
+}
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Add search functionality
+    const playerGuessInput = document.getElementById('player-guess');
+    if (playerGuessInput) {
+        playerGuessInput.addEventListener('input', handleSearch);
+    }
+
+    // Add button hover sounds
     document.querySelectorAll('.btn').forEach(button => {
         button.addEventListener('mouseenter', () => playSound('hover'));
         button.addEventListener('click', () => playSound('click'));
+    });
+
+    // Add keyboard shortcuts
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' && document.getElementById('player-guess') === document.activeElement) {
+            submitGuess();
+        }
+        if (e.key === 'Escape') {
+            goBack();
+        }
     });
 });
