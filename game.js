@@ -541,7 +541,7 @@ function clearSearch() {
 function shareScore() {
     const score = game.triesLeft;
     const mode = currentMode.charAt(0).toUpperCase() + currentMode.slice(1);
-    const text = `🎮 Contextinho!\n${mode} Mode\n🎯 Found in ${10 - score} tries\n\nPlay now at [https://lavanshu02.netlify.app/]`;
+    const text = `🎮 Contextinho!\n${mode} Mode\n🎯 Found in ${10 - score} tries\n\nPlay now at https://lavanshu02.netlify.app/`;
     
     if (navigator.share) {
         navigator.share({
