@@ -412,10 +412,7 @@ function endGame(won) {
                         <strong>Age</strong>
                         <span>${targetInfo.age} years</span>
                     </div>
-                    <div class="stat-item">
-                        <strong>Movies</strong>
-                        <span>${targetInfo.movie_count}</span>
-                    </div>
+                    
                 </div>
                 
                 <div class="stat-bars">
@@ -427,13 +424,7 @@ function endGame(won) {
                         </div>
                         <div class="bar-value">${Math.round(ageScore)}%</div>
                     </div>
-                    <div class="stat-bar">
-                        <label>Experience</label>
-                        <div class="bar-container">
-                            <div class="bar" style="width: ${experienceScore}%"></div>
-                        </div>
-                        <div class="bar-value">${Math.round(experienceScore)}%</div>
-                    </div>
+                  
                 </div>
             </div>
         </div>`;
