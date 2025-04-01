@@ -383,28 +383,60 @@ function endGame(won) {
     const statBars = GAME_MODES[currentMode].statBars;
     const statBarsHtml = statBars.map(stat => `
         <div class="stat-bar">
-            <label>${stat.charAt(0).toUpperCase() + stat.slice(1)}</label>
-            <div class="bar" style="width: ${targetInfo.stats[stat]}%">${targetInfo.stats[stat]}</div>
+            <label>${stat.charAt(0).toUpperCase() + stat.slice(1).replace('_', ' ')}</label>
+            <div class="bar-container">
+                <div class="bar" style="width: ${targetInfo.stats[stat]}%"></div>
+            </div>
+            <div class="bar-value">${targetInfo.stats[stat]}%</div>
         </div>
     `).join('');
 
+    // Calculate age-based stats
+    const ageScore = Math.min(100, Math.max(0, (targetInfo.age / 50) * 100));
+    const experienceScore = Math.min(100, (targetInfo.movie_count / 100) * 100);
+    
     document.getElementById('correct-answer').innerHTML = `
         <div class="player-reveal">
             <h3>${game.targetPlayer.name}</h3>
             <div class="player-stats">
-                <p><strong>Role:</strong> ${currentMode === 'football' ? targetInfo.positions.join(', ') : targetInfo.role}</p>
-                <p><strong>Nationality:</strong> ${targetInfo.nationality}</p>
-                <p><strong>Age:</strong> ${targetInfo.age}</p>
-                ${currentMode === 'cricket' ? `
-                    <p><strong>Batting Style:</strong> ${targetInfo.batting_style}</p>
-                    <p><strong>Bowling Style:</strong> ${targetInfo.bowling_style}</p>
-                ` : ''}
+                <div class="stat-group">
+                    <div class="stat-item">
+                        <strong>Role</strong>
+                        <span>${currentMode === 'football' ? targetInfo.positions.join(', ') : targetInfo.role}</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>Nationality</strong>
+                        <span>${targetInfo.nationality}</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>Age</strong>
+                        <span>${targetInfo.age} years</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>Movies</strong>
+                        <span>${targetInfo.movie_count}</span>
+                    </div>
+                </div>
+                
                 <div class="stat-bars">
                     ${statBarsHtml}
+                    <div class="stat-bar">
+                        <label>Age Factor</label>
+                        <div class="bar-container">
+                            <div class="bar" style="width: ${ageScore}%"></div>
+                        </div>
+                        <div class="bar-value">${Math.round(ageScore)}%</div>
+                    </div>
+                    <div class="stat-bar">
+                        <label>Experience</label>
+                        <div class="bar-container">
+                            <div class="bar" style="width: ${experienceScore}%"></div>
+                        </div>
+                        <div class="bar-value">${Math.round(experienceScore)}%</div>
+                    </div>
                 </div>
             </div>
-        </div>
-    `;
+        </div>`;
 }
 
 function createConfetti() {

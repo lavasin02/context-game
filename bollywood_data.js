@@ -4,19 +4,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 95,
-        "performance": 88,
-        "versatility": 55,
-        "experience": 85,
-        "box_office": 92,
-        "star_power": 94
-      },
-      "achievements": [
-        "Over 100 Movies",
-        "3200 Total Rating Points",
-        "#1 in Rankings"
-      ],
+      "age": 59,  // Born 1965
+      "stats": { "popularity": 95, "performance": 88, "versatility": 55, "experience": 85, "box_office": 92, "star_power": 94 },
+      "achievements": ["Over 100 Movies", "3200 Total Rating Points", "#1 in Rankings"],
       "movie_count": 105,
       "rating_sum": 3200,
       "google_hits": 5200000
@@ -27,19 +17,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 93,
-        "performance": 78,
-        "versatility": 45,
-        "experience": 82,
-        "box_office": 90,
-        "star_power": 92
-      },
-      "achievements": [
-        "Over 110 Movies",
-        "2800 Total Rating Points",
-        "#5 in Rankings"
-      ],
+      "age": 59,  // Born 1965
+      "stats": { "popularity": 93, "performance": 78, "versatility": 45, "experience": 82, "box_office": 90, "star_power": 92 },
+      "achievements": ["Over 110 Movies", "2800 Total Rating Points", "#5 in Rankings"],
       "movie_count": 110,
       "rating_sum": 2800,
       "google_hits": 5000000
@@ -50,19 +30,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 92,
-        "performance": 90,
-        "versatility": 60,
-        "experience": 95,
-        "box_office": 85,
-        "star_power": 90
-      },
-      "achievements": [
-        "Over 200 Movies",
-        "3500 Total Rating Points",
-        "#3 in Rankings"
-      ],
+      "age": 82,  // Born 1942
+      "stats": { "popularity": 92, "performance": 90, "versatility": 60, "experience": 95, "box_office": 85, "star_power": 90 },
+      "achievements": ["Over 200 Movies", "3500 Total Rating Points", "#3 in Rankings"],
       "movie_count": 205,
       "rating_sum": 3500,
       "google_hits": 4800000
@@ -73,19 +43,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 88,
-        "performance": 92,
-        "versatility": 60,
-        "experience": 78,
-        "box_office": 85,
-        "star_power": 90
-      },
-      "achievements": [
-        "55 Movies",
-        "2700 Total Rating Points",
-        "#7 in Rankings"
-      ],
+      "age": 60,  // Born 1965
+      "stats": { "popularity": 88, "performance": 92, "versatility": 60, "experience": 78, "box_office": 85, "star_power": 90 },
+      "achievements": ["55 Movies", "2700 Total Rating Points", "#7 in Rankings"],
       "movie_count": 55,
       "rating_sum": 2700,
       "google_hits": 4500000
@@ -96,19 +56,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 92,
-        "performance": 90,
-        "versatility": 55,
-        "experience": 60,
-        "box_office": 88,
-        "star_power": 91
-      },
-      "achievements": [
-        "35 Movies",
-        "2000 Total Rating Points",
-        "#6 in Rankings"
-      ],
+      "age": 32,  // Born 1993
+      "stats": { "popularity": 92, "performance": 90, "versatility": 55, "experience": 60, "box_office": 88, "star_power": 91 },
+      "achievements": ["35 Movies", "2000 Total Rating Points", "#6 in Rankings"],
       "movie_count": 35,
       "rating_sum": 2000,
       "google_hits": 3800000
@@ -119,19 +69,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 90,
-        "performance": 85,
-        "versatility": 50,
-        "experience": 75,
-        "box_office": 70,
-        "star_power": 88
-      },
-      "achievements": [
-        "50 Movies",
-        "2500 Total Rating Points",
-        "#20 in Rankings"
-      ],
+      "age": 42,  // Born 1982
+      "stats": { "popularity": 90, "performance": 85, "versatility": 50, "experience": 75, "box_office": 70, "star_power": 88 },
+      "achievements": ["50 Movies", "2500 Total Rating Points", "#20 in Rankings"],
       "movie_count": 50,
       "rating_sum": 2500,
       "google_hits": 4000000
@@ -142,19 +82,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 100,
-        "performance": 100,
-        "versatility": 100,
-        "experience": 100,
-        "box_office": 100,
-        "star_power": 100
-      },
-      "achievements": [
-        "50 Movies",
-        "2400 Total Rating Points",
-        "#9 in Rankings"
-      ],
+      "age": 39,  // Born 1986
+      "stats": { "popularity": 100, "performance": 100, "versatility": 100, "experience": 100, "box_office": 100, "star_power": 100 },
+      "achievements": ["50 Movies", "2400 Total Rating Points", "#9 in Rankings"],
       "movie_count": 50,
       "rating_sum": 2400,
       "google_hits": 3600000
@@ -165,19 +95,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 87,
-        "performance": 86,
-        "versatility": 55,
-        "experience": 67,
-        "box_office": 84,
-        "star_power": 88
-      },
-      "achievements": [
-        "45 Movies",
-        "2300 Total Rating Points",
-        "#16 in Rankings"
-      ],
+      "age": 51,  // Born 1974
+      "stats": { "popularity": 87, "performance": 86, "versatility": 55, "experience": 67, "box_office": 84, "star_power": 88 },
+      "achievements": ["45 Movies", "2300 Total Rating Points", "#16 in Rankings"],
       "movie_count": 45,
       "rating_sum": 2300,
       "google_hits": 3300000
@@ -188,19 +108,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 89,
-        "performance": 88,
-        "versatility": 55,
-        "experience": 65,
-        "box_office": 85,
-        "star_power": 89
-      },
-      "achievements": [
-        "40 Movies",
-        "2100 Total Rating Points",
-        "#11 in Rankings"
-      ],
+      "age": 42,  // Born 1982
+      "stats": { "popularity": 89, "performance": 88, "versatility": 55, "experience": 65, "box_office": 85, "star_power": 89 },
+      "achievements": ["40 Movies", "2100 Total Rating Points", "#11 in Rankings"],
       "movie_count": 40,
       "rating_sum": 2100,
       "google_hits": 3400000
@@ -211,19 +121,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 88,
-        "performance": 80,
-        "versatility": 62,
-        "experience": 80,
-        "box_office": 88,
-        "star_power": 85
-      },
-      "achievements": [
-        "Over 140 Movies",
-        "2900 Total Rating Points",
-        "#8 in Rankings"
-      ],
+      "age": 57,  // Born 1967
+      "stats": { "popularity": 88, "performance": 80, "versatility": 62, "experience": 80, "box_office": 88, "star_power": 85 },
+      "achievements": ["Over 140 Movies", "2900 Total Rating Points", "#8 in Rankings"],
       "movie_count": 140,
       "rating_sum": 2900,
       "google_hits": 4200000
@@ -234,19 +134,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 88,
-        "performance": 86,
-        "versatility": 60,
-        "experience": 58,
-        "box_office": 83,
-        "star_power": 87
-      },
-      "achievements": [
-        "30 Movies",
-        "1800 Total Rating Points",
-        "#13 in Rankings"
-      ],
+      "age": 39,  // Born 1985
+      "stats": { "popularity": 88, "performance": 86, "versatility": 60, "experience": 58, "box_office": 83, "star_power": 87 },
+      "achievements": ["30 Movies", "1800 Total Rating Points", "#13 in Rankings"],
       "movie_count": 30,
       "rating_sum": 1800,
       "google_hits": 3200000
@@ -257,19 +147,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 89,
-        "performance": 88,
-        "versatility": 54,
-        "experience": 40,
-        "box_office": 80,
-        "star_power": 86
-      },
-      "achievements": [
-        "15 Movies",
-        "1200 Total Rating Points",
-        "#19 in Rankings"
-      ],
+      "age": 30,  // Born 1994
+      "stats": { "popularity": 89, "performance": 88, "versatility": 54, "experience": 40, "box_office": 80, "star_power": 86 },
+      "achievements": ["15 Movies", "1200 Total Rating Points", "#19 in Rankings"],
       "movie_count": 15,
       "rating_sum": 1200,
       "google_hits": 3100000
@@ -280,19 +160,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 85,
-        "performance": 75,
-        "versatility": 40,
-        "experience": 68,
-        "box_office": 78,
-        "star_power": 84
-      },
-      "achievements": [
-        "50 Movies",
-        "2000 Total Rating Points",
-        "#35 in Rankings"
-      ],
+      "age": 41,  // Born 1983
+      "stats": { "popularity": 85, "performance": 75, "versatility": 40, "experience": 68, "box_office": 78, "star_power": 84 },
+      "achievements": ["50 Movies", "2000 Total Rating Points", "#35 in Rankings"],
       "movie_count": 50,
       "rating_sum": 2000,
       "google_hits": 2900000
@@ -303,19 +173,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 86,
-        "performance": 82,
-        "versatility": 55,
-        "experience": 78,
-        "box_office": 85,
-        "star_power": 84
-      },
-      "achievements": [
-        "Over 100 Movies",
-        "2600 Total Rating Points",
-        "#14 in Rankings"
-      ],
+      "age": 55,  // Born 1969
+      "stats": { "popularity": 86, "performance": 82, "versatility": 55, "experience": 78, "box_office": 85, "star_power": 84 },
+      "achievements": ["Over 100 Movies", "2600 Total Rating Points", "#14 in Rankings"],
       "movie_count": 105,
       "rating_sum": 2600,
       "google_hits": 3800000
@@ -326,19 +186,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 87,
-        "performance": 89,
-        "versatility": 58,
-        "experience": 55,
-        "box_office": 82,
-        "star_power": 86
-      },
-      "achievements": [
-        "20 Movies",
-        "1600 Total Rating Points",
-        "#17 in Rankings"
-      ],
+      "age": 36,  // Born 1988
+      "stats": { "popularity": 87, "performance": 89, "versatility": 58, "experience": 55, "box_office": 82, "star_power": 86 },
+      "achievements": ["20 Movies", "1600 Total Rating Points", "#17 in Rankings"],
       "movie_count": 20,
       "rating_sum": 1600,
       "google_hits": 3000000
@@ -349,19 +199,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 85,
-        "performance": 82,
-        "versatility": 50,
-        "experience": 72,
-        "box_office": 68,
-        "star_power": 83
-      },
-      "achievements": [
-        "55 Movies",
-        "2100 Total Rating Points",
-        "#25 in Rankings"
-      ],
+      "age": 51,  // Born 1973
+      "stats": { "popularity": 85, "performance": 82, "versatility": 50, "experience": 72, "box_office": 68, "star_power": 83 },
+      "achievements": ["55 Movies", "2100 Total Rating Points", "#25 in Rankings"],
       "movie_count": 55,
       "rating_sum": 2100,
       "google_hits": 3700000
@@ -372,19 +212,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 85,
-        "performance": 78,
-        "versatility": 50,
-        "experience": 52,
-        "box_office": 78,
-        "star_power": 83
-      },
-      "achievements": [
-        "25 Movies",
-        "1500 Total Rating Points",
-        "#45 in Rankings"
-      ],
+      "age": 37,  // Born 1987
+      "stats": { "popularity": 85, "performance": 78, "versatility": 50, "experience": 52, "box_office": 78, "star_power": 83 },
+      "achievements": ["25 Movies", "1500 Total Rating Points", "#45 in Rankings"],
       "movie_count": 25,
       "rating_sum": 1500,
       "google_hits": 2700000
@@ -395,19 +225,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 83,
-        "performance": 87,
-        "versatility": 48,
-        "experience": 70,
-        "box_office": 72,
-        "star_power": 83
-      },
-      "achievements": [
-        "50 Movies",
-        "2100 Total Rating Points",
-        "#32 in Rankings"
-      ],
+      "age": 50,  // Born 1974
+      "stats": { "popularity": 83, "performance": 87, "versatility": 48, "experience": 70, "box_office": 72, "star_power": 83 },
+      "achievements": ["50 Movies", "2100 Total Rating Points", "#32 in Rankings"],
       "movie_count": 50,
       "rating_sum": 2100,
       "google_hits": 3300000
@@ -418,19 +238,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 85,
-        "performance": 83,
-        "versatility": 48,
-        "experience": 44,
-        "box_office": 74,
-        "star_power": 84
-      },
-      "achievements": [
-        "15 Movies",
-        "1100 Total Rating Points",
-        "#38 in Rankings"
-      ],
+      "age": 28,  // Born 1997
+      "stats": { "popularity": 85, "performance": 83, "versatility": 48, "experience": 44, "box_office": 74, "star_power": 84 },
+      "achievements": ["15 Movies", "1100 Total Rating Points", "#38 in Rankings"],
       "movie_count": 15,
       "rating_sum": 1100,
       "google_hits": 3200000
@@ -441,19 +251,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 84,
-        "performance": 76,
-        "versatility": 45,
-        "experience": 50,
-        "box_office": 78,
-        "star_power": 83
-      },
-      "achievements": [
-        "15 Movies",
-        "1400 Total Rating Points",
-        "#42 in Rankings"
-      ],
+      "age": 35,  // Born 1990
+      "stats": { "popularity": 84, "performance": 76, "versatility": 45, "experience": 50, "box_office": 78, "star_power": 83 },
+      "achievements": ["15 Movies", "1400 Total Rating Points", "#42 in Rankings"],
       "movie_count": 15,
       "rating_sum": 1400,
       "google_hits": 2900000
@@ -464,19 +264,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 84,
-        "performance": 79,
-        "versatility": 46,
-        "experience": 70,
-        "box_office": 75,
-        "star_power": 82
-      },
-      "achievements": [
-        "65 Movies",
-        "2000 Total Rating Points",
-        "#30 in Rankings"
-      ],
+      "age": 44,  // Born 1980
+      "stats": { "popularity": 84, "performance": 79, "versatility": 46, "experience": 70, "box_office": 75, "star_power": 82 },
+      "achievements": ["65 Movies", "2000 Total Rating Points", "#30 in Rankings"],
       "movie_count": 65,
       "rating_sum": 2000,
       "google_hits": 3000000
@@ -487,19 +277,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 83,
-        "performance": 80,
-        "versatility": 48,
-        "experience": 60,
-        "box_office": 72,
-        "star_power": 82
-      },
-      "achievements": [
-        "30 Movies",
-        "1700 Total Rating Points",
-        "#40 in Rankings"
-      ],
+      "age": 36,  // Born 1988
+      "stats": { "popularity": 83, "performance": 80, "versatility": 48, "experience": 60, "box_office": 72, "star_power": 82 },
+      "achievements": ["30 Movies", "1700 Total Rating Points", "#40 in Rankings"],
       "movie_count": 30,
       "rating_sum": 1700,
       "google_hits": 2800000
@@ -510,19 +290,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 84,
-        "performance": 83,
-        "versatility": 52,
-        "experience": 60,
-        "box_office": 75,
-        "star_power": 82
-      },
-      "achievements": [
-        "40 Movies",
-        "1800 Total Rating Points",
-        "#28 in Rankings"
-      ],
+      "age": 44,  // Born 1981
+      "stats": { "popularity": 84, "performance": 83, "versatility": 52, "experience": 60, "box_office": 75, "star_power": 82 },
+      "achievements": ["40 Movies", "1800 Total Rating Points", "#28 in Rankings"],
       "movie_count": 40,
       "rating_sum": 1800,
       "google_hits": 2900000
@@ -533,19 +303,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 85,
-        "performance": 80,
-        "versatility": 45,
-        "experience": 40,
-        "box_office": 75,
-        "star_power": 82
-      },
-      "achievements": [
-        "10 Movies",
-        "900 Total Rating Points",
-        "#50 in Rankings"
-      ],
+      "age": 29,  // Born 1995
+      "stats": { "popularity": 85, "performance": 80, "versatility": 45, "experience": 40, "box_office": 75, "star_power": 82 },
+      "achievements": ["10 Movies", "900 Total Rating Points", "#50 in Rankings"],
       "movie_count": 10,
       "rating_sum": 900,
       "google_hits": 3000000
@@ -556,19 +316,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 86,
-        "performance": 82,
-        "versatility": 50,
-        "experience": 48,
-        "box_office": 80,
-        "star_power": 85
-      },
-      "achievements": [
-        "15 Movies",
-        "1500 Total Rating Points",
-        "#23 in Rankings"
-      ],
+      "age": 34,  // Born 1990
+      "stats": { "popularity": 86, "performance": 82, "versatility": 50, "experience": 48, "box_office": 80, "star_power": 85 },
+      "achievements": ["15 Movies", "1500 Total Rating Points", "#23 in Rankings"],
       "movie_count": 15,
       "rating_sum": 1500,
       "google_hits": 3100000
@@ -579,19 +329,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 87,
-        "performance": 83,
-        "versatility": 48,
-        "experience": 50,
-        "box_office": 82,
-        "star_power": 85
-      },
-      "achievements": [
-        "20 Movies",
-        "1600 Total Rating Points",
-        "#21 in Rankings"
-      ],
+      "age": 32,  // Born 1992
+      "stats": { "popularity": 87, "performance": 83, "versatility": 48, "experience": 50, "box_office": 82, "star_power": 85 },
+      "achievements": ["20 Movies", "1600 Total Rating Points", "#21 in Rankings"],
       "movie_count": 20,
       "rating_sum": 1600,
       "google_hits": 3200000
@@ -602,19 +342,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 82,
-        "performance": 85,
-        "versatility": 45,
-        "experience": 75,
-        "box_office": 70,
-        "star_power": 80
-      },
-      "achievements": [
-        "80 Movies",
-        "2300 Total Rating Points",
-        "#50 in Rankings"
-      ],
+      "age": 57,  // Born 1967
+      "stats": { "popularity": 82, "performance": 85, "versatility": 45, "experience": 75, "box_office": 70, "star_power": 80 },
+      "achievements": ["80 Movies", "2300 Total Rating Points", "#50 in Rankings"],
       "movie_count": 80,
       "rating_sum": 2300,
       "google_hits": 3100000
@@ -625,19 +355,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 85,
-        "performance": 80,
-        "versatility": 50,
-        "experience": 52,
-        "box_office": 78,
-        "star_power": 83
-      },
-      "achievements": [
-        "20 Movies",
-        "1500 Total Rating Points",
-        "#33 in Rankings"
-      ],
+      "age": 40,  // Born 1985
+      "stats": { "popularity": 85, "performance": 80, "versatility": 50, "experience": 52, "box_office": 78, "star_power": 83 },
+      "achievements": ["20 Movies", "1500 Total Rating Points", "#33 in Rankings"],
       "movie_count": 20,
       "rating_sum": 1500,
       "google_hits": 2900000
@@ -648,19 +368,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 83,
-        "performance": 78,
-        "versatility": 42,
-        "experience": 38,
-        "box_office": 72,
-        "star_power": 81
-      },
-      "achievements": [
-        "12 Movies",
-        "900 Total Rating Points",
-        "#48 in Rankings"
-      ],
+      "age": 26,  // Born 1998
+      "stats": { "popularity": 83, "performance": 78, "versatility": 42, "experience": 38, "box_office": 72, "star_power": 81 },
+      "achievements": ["12 Movies", "900 Total Rating Points", "#48 in Rankings"],
       "movie_count": 12,
       "rating_sum": 900,
       "google_hits": 2900000
@@ -671,19 +381,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 85,
-        "performance": 87,
-        "versatility": 60,
-        "experience": 55,
-        "box_office": 78,
-        "star_power": 84
-      },
-      "achievements": [
-        "20 Movies",
-        "1700 Total Rating Points",
-        "#24 in Rankings"
-      ],
+      "age": 40,  // Born 1984
+      "stats": { "popularity": 85, "performance": 87, "versatility": 60, "experience": 55, "box_office": 78, "star_power": 84 },
+      "achievements": ["20 Movies", "1700 Total Rating Points", "#24 in Rankings"],
       "movie_count": 20,
       "rating_sum": 1700,
       "google_hits": 2800000
@@ -694,19 +394,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 84,
-        "performance": 90,
-        "versatility": 62,
-        "experience": 58,
-        "box_office": 76,
-        "star_power": 83
-      },
-      "achievements": [
-        "30 Movies",
-        "1800 Total Rating Points",
-        "#26 in Rankings"
-      ],
+      "age": 40,  // Born 1984
+      "stats": { "popularity": 84, "performance": 90, "versatility": 62, "experience": 58, "box_office": 76, "star_power": 83 },
+      "achievements": ["30 Movies", "1800 Total Rating Points", "#26 in Rankings"],
       "movie_count": 30,
       "rating_sum": 1800,
       "google_hits": 2700000
@@ -717,19 +407,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 86,
-        "performance": 82,
-        "versatility": 50,
-        "experience": 48,
-        "box_office": 80,
-        "star_power": 84
-      },
-      "achievements": [
-        "15 Movies",
-        "1400 Total Rating Points",
-        "#29 in Rankings"
-      ],
+      "age": 34,  // Born 1990
+      "stats": { "popularity": 86, "performance": 82, "versatility": 50, "experience": 48, "box_office": 80, "star_power": 84 },
+      "achievements": ["15 Movies", "1400 Total Rating Points", "#29 in Rankings"],
       "movie_count": 15,
       "rating_sum": 1400,
       "google_hits": 3000000
@@ -740,19 +420,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 83,
-        "performance": 88,
-        "versatility": 55,
-        "experience": 55,
-        "box_office": 74,
-        "star_power": 82
-      },
-      "achievements": [
-        "25 Movies",
-        "1600 Total Rating Points",
-        "#31 in Rankings"
-      ],
+      "age": 37,  // Born 1987
+      "stats": { "popularity": 83, "performance": 88, "versatility": 55, "experience": 55, "box_office": 74, "star_power": 82 },
+      "achievements": ["25 Movies", "1600 Total Rating Points", "#31 in Rankings"],
       "movie_count": 25,
       "rating_sum": 1600,
       "google_hits": 2600000
@@ -763,19 +433,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 86,
-        "performance": 80,
-        "versatility": 48,
-        "experience": 52,
-        "box_office": 82,
-        "star_power": 85
-      },
-      "achievements": [
-        "20 Movies",
-        "1500 Total Rating Points",
-        "#27 in Rankings"
-      ],
+      "age": 38,  // Born 1987
+      "stats": { "popularity": 86, "performance": 80, "versatility": 48, "experience": 52, "box_office": 82, "star_power": 85 },
+      "achievements": ["20 Movies", "1500 Total Rating Points", "#27 in Rankings"],
       "movie_count": 20,
       "rating_sum": 1500,
       "google_hits": 3100000
@@ -786,19 +446,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 82,
-        "performance": 80,
-        "versatility": 50,
-        "experience": 50,
-        "box_office": 75,
-        "star_power": 81
-      },
-      "achievements": [
-        "15 Movies",
-        "1300 Total Rating Points",
-        "#39 in Rankings"
-      ],
+      "age": 39,  // Born 1985
+      "stats": { "popularity": 82, "performance": 80, "versatility": 50, "experience": 50, "box_office": 75, "star_power": 81 },
+      "achievements": ["15 Movies", "1300 Total Rating Points", "#39 in Rankings"],
       "movie_count": 15,
       "rating_sum": 1300,
       "google_hits": 2700000
@@ -809,19 +459,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 88,
-        "performance": 82,
-        "versatility": 50,
-        "experience": 45,
-        "box_office": 83,
-        "star_power": 86
-      },
-      "achievements": [
-        "15 Movies",
-        "1400 Total Rating Points",
-        "#22 in Rankings"
-      ],
+      "age": 28,  // Born 1996
+      "stats": { "popularity": 88, "performance": 82, "versatility": 50, "experience": 45, "box_office": 83, "star_power": 86 },
+      "achievements": ["15 Movies", "1400 Total Rating Points", "#22 in Rankings"],
       "movie_count": 15,
       "rating_sum": 1400,
       "google_hits": 3300000
@@ -832,19 +472,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 87,
-        "performance": 85,
-        "versatility": 55,
-        "experience": 50,
-        "box_office": 80,
-        "star_power": 85
-      },
-      "achievements": [
-        "20 Movies",
-        "1600 Total Rating Points",
-        "#18 in Rankings"
-      ],
+      "age": 41,  // Born 1984
+      "stats": { "popularity": 87, "performance": 85, "versatility": 55, "experience": 50, "box_office": 80, "star_power": 85 },
+      "achievements": ["20 Movies", "1600 Total Rating Points", "#18 in Rankings"],
       "movie_count": 20,
       "rating_sum": 1600,
       "google_hits": 3000000
@@ -855,19 +485,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 82,
-        "performance": 92,
-        "versatility": 65,
-        "experience": 60,
-        "box_office": 70,
-        "star_power": 80
-      },
-      "achievements": [
-        "50 Movies",
-        "2000 Total Rating Points",
-        "#34 in Rankings"
-      ],
+      "age": 50,  // Born 1974
+      "stats": { "popularity": 82, "performance": 92, "versatility": 65, "experience": 60, "box_office": 70, "star_power": 80 },
+      "achievements": ["50 Movies", "2000 Total Rating Points", "#34 in Rankings"],
       "movie_count": 50,
       "rating_sum": 2000,
       "google_hits": 2500000
@@ -878,19 +498,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 83,
-        "performance": 90,
-        "versatility": 58,
-        "experience": 65,
-        "box_office": 72,
-        "star_power": 82
-      },
-      "achievements": [
-        "40 Movies",
-        "1900 Total Rating Points",
-        "#36 in Rankings"
-      ],
+      "age": 46,  // Born 1979
+      "stats": { "popularity": 83, "performance": 90, "versatility": 58, "experience": 65, "box_office": 72, "star_power": 82 },
+      "achievements": ["40 Movies", "1900 Total Rating Points", "#36 in Rankings"],
       "movie_count": 40,
       "rating_sum": 1900,
       "google_hits": 2800000
@@ -901,19 +511,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 84,
-        "performance": 89,
-        "versatility": 60,
-        "experience": 60,
-        "box_office": 74,
-        "star_power": 83
-      },
-      "achievements": [
-        "35 Movies",
-        "1800 Total Rating Points",
-        "#37 in Rankings"
-      ],
+      "age": 38,  // Born 1987
+      "stats": { "popularity": 84, "performance": 89, "versatility": 60, "experience": 60, "box_office": 74, "star_power": 83 },
+      "achievements": ["35 Movies", "1800 Total Rating Points", "#37 in Rankings"],
       "movie_count": 35,
       "rating_sum": 1800,
       "google_hits": 2900000
@@ -924,19 +524,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 85,
-        "performance": 78,
-        "versatility": 45,
-        "experience": 80,
-        "box_office": 80,
-        "star_power": 84
-      },
-      "achievements": [
-        "Over 100 Movies",
-        "2500 Total Rating Points",
-        "#41 in Rankings"
-      ],
+      "age": 67,  // Born 1957
+      "stats": { "popularity": 85, "performance": 78, "versatility": 45, "experience": 80, "box_office": 80, "star_power": 84 },
+      "achievements": ["Over 100 Movies", "2500 Total Rating Points", "#41 in Rankings"],
       "movie_count": 105,
       "rating_sum": 2500,
       "google_hits": 3000000
@@ -947,19 +537,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 82,
-        "performance": 87,
-        "versatility": 50,
-        "experience": 70,
-        "box_office": 70,
-        "star_power": 81
-      },
-      "achievements": [
-        "50 Movies",
-        "2000 Total Rating Points",
-        "#43 in Rankings"
-      ],
+      "age": 47,  // Born 1978
+      "stats": { "popularity": 82, "performance": 87, "versatility": 50, "experience": 70, "box_office": 70, "star_power": 81 },
+      "achievements": ["50 Movies", "2000 Total Rating Points", "#43 in Rankings"],
       "movie_count": 50,
       "rating_sum": 2000,
       "google_hits": 2700000
@@ -970,19 +550,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 82,
-        "performance": 82,
-        "versatility": 55,
-        "experience": 70,
-        "box_office": 72,
-        "star_power": 80
-      },
-      "achievements": [
-        "60 Movies",
-        "1900 Total Rating Points",
-        "#44 in Rankings"
-      ],
+      "age": 54,  // Born 1970
+      "stats": { "popularity": 82, "performance": 82, "versatility": 55, "experience": 70, "box_office": 72, "star_power": 80 },
+      "achievements": ["60 Movies", "1900 Total Rating Points", "#44 in Rankings"],
       "movie_count": 60,
       "rating_sum": 1900,
       "google_hits": 2600000
@@ -993,19 +563,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 85,
-        "performance": 92,
-        "versatility": 65,
-        "experience": 55,
-        "box_office": 75,
-        "star_power": 84
-      },
-      "achievements": [
-        "50 Movies",
-        "1800 Total Rating Points",
-        "#15 in Rankings"
-      ],
+      "age": 48,  // Born 1976
+      "stats": { "popularity": 85, "performance": 92, "versatility": 65, "experience": 55, "box_office": 75, "star_power": 84 },
+      "achievements": ["50 Movies", "1800 Total Rating Points", "#15 in Rankings"],
       "movie_count": 50,
       "rating_sum": 1800,
       "google_hits": 2900000
@@ -1016,19 +576,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 85,
-        "performance": 78,
-        "versatility": 45,
-        "experience": 45,
-        "box_office": 76,
-        "star_power": 83
-      },
-      "achievements": [
-        "15 Movies",
-        "1200 Total Rating Points",
-        "#46 in Rankings"
-      ],
+      "age": 32,  // Born 1992
+      "stats": { "popularity": 85, "performance": 78, "versatility": 45, "experience": 45, "box_office": 76, "star_power": 83 },
+      "achievements": ["15 Movies", "1200 Total Rating Points", "#46 in Rankings"],
       "movie_count": 15,
       "rating_sum": 1200,
       "google_hits": 3000000
@@ -1039,19 +589,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 83,
-        "performance": 78,
-        "versatility": 50,
-        "experience": 80,
-        "box_office": 75,
-        "star_power": 81
-      },
-      "achievements": [
-        "Over 130 Movies",
-        "2400 Total Rating Points",
-        "#47 in Rankings"
-      ],
+      "age": 65,  // Born 1959
+      "stats": { "popularity": 83, "performance": 78, "versatility": 50, "experience": 80, "box_office": 75, "star_power": 81 },
+      "achievements": ["Over 130 Movies", "2400 Total Rating Points", "#47 in Rankings"],
       "movie_count": 135,
       "rating_sum": 2400,
       "google_hits": 2800000
@@ -1062,19 +602,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 83,
-        "performance": 85,
-        "versatility": 55,
-        "experience": 48,
-        "box_office": 74,
-        "star_power": 82
-      },
-      "achievements": [
-        "15 Movies",
-        "1300 Total Rating Points",
-        "#49 in Rankings"
-      ],
+      "age": 35,  // Born 1989
+      "stats": { "popularity": 83, "performance": 85, "versatility": 55, "experience": 48, "box_office": 74, "star_power": 82 },
+      "achievements": ["15 Movies", "1300 Total Rating Points", "#49 in Rankings"],
       "movie_count": 15,
       "rating_sum": 1300,
       "google_hits": 2700000
@@ -1085,19 +615,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 82,
-        "performance": 80,
-        "versatility": 48,
-        "experience": 50,
-        "box_office": 75,
-        "star_power": 81
-      },
-      "achievements": [
-        "30 Movies",
-        "1400 Total Rating Points",
-        "#51 in Rankings"
-      ],
+      "age": 37,  // Born 1987
+      "stats": { "popularity": 82, "performance": 80, "versatility": 48, "experience": 50, "box_office": 75, "star_power": 81 },
+      "achievements": ["30 Movies", "1400 Total Rating Points", "#51 in Rankings"],
       "movie_count": 30,
       "rating_sum": 1400,
       "google_hits": 2600000
@@ -1108,19 +628,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 82,
-        "versatility": 50,
-        "experience": 65,
-        "box_office": 70,
-        "star_power": 79
-      },
-      "achievements": [
-        "50 Movies",
-        "1700 Total Rating Points",
-        "#52 in Rankings"
-      ],
+      "age": 49,  // Born 1976
+      "stats": { "popularity": 80, "performance": 82, "versatility": 50, "experience": 65, "box_office": 70, "star_power": 79 },
+      "achievements": ["50 Movies", "1700 Total Rating Points", "#52 in Rankings"],
       "movie_count": 50,
       "rating_sum": 1700,
       "google_hits": 2500000
@@ -1131,19 +641,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 81,
-        "performance": 82,
-        "versatility": 50,
-        "experience": 50,
-        "box_office": 72,
-        "star_power": 80
-      },
-      "achievements": [
-        "20 Movies",
-        "1300 Total Rating Points",
-        "#53 in Rankings"
-      ],
+      "age": 36,  // Born 1988
+      "stats": { "popularity": 81, "performance": 82, "versatility": 50, "experience": 50, "box_office": 72, "star_power": 80 },
+      "achievements": ["20 Movies", "1300 Total Rating Points", "#53 in Rankings"],
       "movie_count": 20,
       "rating_sum": 1300,
       "google_hits": 2600000
@@ -1154,19 +654,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 82,
-        "performance": 78,
-        "versatility": 45,
-        "experience": 65,
-        "box_office": 76,
-        "star_power": 81
-      },
-      "achievements": [
-        "50 Movies",
-        "1500 Total Rating Points",
-        "#54 in Rankings"
-      ],
+      "age": 52,  // Born 1972
+      "stats": { "popularity": 82, "performance": 78, "versatility": 45, "experience": 65, "box_office": 76, "star_power": 81 },
+      "achievements": ["50 Movies", "1500 Total Rating Points", "#54 in Rankings"],
       "movie_count": 50,
       "rating_sum": 1500,
       "google_hits": 2700000
@@ -1177,19 +667,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 83,
-        "performance": 83,
-        "versatility": 50,
-        "experience": 48,
-        "box_office": 74,
-        "star_power": 82
-      },
-      "achievements": [
-        "20 Movies",
-        "1400 Total Rating Points",
-        "#55 in Rankings"
-      ],
+      "age": 36,  // Born 1988
+      "stats": { "popularity": 83, "performance": 83, "versatility": 50, "experience": 48, "box_office": 74, "star_power": 82 },
+      "achievements": ["20 Movies", "1400 Total Rating Points", "#55 in Rankings"],
       "movie_count": 20,
       "rating_sum": 1400,
       "google_hits": 2800000
@@ -1200,19 +680,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 82,
-        "performance": 80,
-        "versatility": 48,
-        "experience": 45,
-        "box_office": 73,
-        "star_power": 81
-      },
-      "achievements": [
-        "25 Movies",
-        "1300 Total Rating Points",
-        "#56 in Rankings"
-      ],
+      "age": 34,  // Born 1990
+      "stats": { "popularity": 82, "performance": 80, "versatility": 48, "experience": 45, "box_office": 73, "star_power": 81 },
+      "achievements": ["25 Movies", "1300 Total Rating Points", "#56 in Rankings"],
       "movie_count": 25,
       "rating_sum": 1300,
       "google_hits": 2700000
@@ -1223,19 +693,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 81,
-        "performance": 80,
-        "versatility": 50,
-        "experience": 60,
-        "box_office": 72,
-        "star_power": 80
-      },
-      "achievements": [
-        "50 Movies",
-        "1600 Total Rating Points",
-        "#57 in Rankings"
-      ],
+      "age": 46,  // Born 1979
+      "stats": { "popularity": 81, "performance": 80, "versatility": 50, "experience": 60, "box_office": 72, "star_power": 80 },
+      "achievements": ["50 Movies", "1600 Total Rating Points", "#57 in Rankings"],
       "movie_count": 50,
       "rating_sum": 1600,
       "google_hits": 2600000
@@ -1246,19 +706,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 82,
-        "versatility": 45,
-        "experience": 65,
-        "box_office": 68,
-        "star_power": 79
-      },
-      "achievements": [
-        "40 Movies",
-        "1500 Total Rating Points",
-        "#58 in Rankings"
-      ],
+      "age": 50,  // Born 1975
+      "stats": { "popularity": 80, "performance": 82, "versatility": 45, "experience": 65, "box_office": 68, "star_power": 79 },
+      "achievements": ["40 Movies", "1500 Total Rating Points", "#58 in Rankings"],
       "movie_count": 40,
       "rating_sum": 1500,
       "google_hits": 2500000
@@ -1269,19 +719,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 85,
-        "versatility": 55,
-        "experience": 35,
-        "box_office": 70,
-        "star_power": 78
-      },
-      "achievements": [
-        "15 Movies",
-        "1200 Total Rating Points",
-        "#59 in Rankings"
-      ],
+      "age": 39,  // Born 1986 (deceased 2020, age at death + years to 2025)
+      "stats": { "popularity": 80, "performance": 85, "versatility": 55, "experience": 35, "box_office": 70, "star_power": 78 },
+      "achievements": ["15 Movies", "1200 Total Rating Points", "#59 in Rankings"],
       "movie_count": 15,
       "rating_sum": 1200,
       "google_hits": 2400000
@@ -1292,19 +732,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 81,
-        "performance": 84,
-        "versatility": 52,
-        "experience": 48,
-        "box_office": 70,
-        "star_power": 80
-      },
-      "achievements": [
-        "20 Movies",
-        "1300 Total Rating Points",
-        "#60 in Rankings"
-      ],
+      "age": 38,  // Born 1986
+      "stats": { "popularity": 81, "performance": 84, "versatility": 52, "experience": 48, "box_office": 70, "star_power": 80 },
+      "achievements": ["20 Movies", "1300 Total Rating Points", "#60 in Rankings"],
       "movie_count": 20,
       "rating_sum": 1300,
       "google_hits": 2600000
@@ -1315,19 +745,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 78,
-        "versatility": 48,
-        "experience": 50,
-        "box_office": 72,
-        "star_power": 79
-      },
-      "achievements": [
-        "20 Movies",
-        "1200 Total Rating Points",
-        "#61 in Rankings"
-      ],
+      "age": 39,  // Born 1985
+      "stats": { "popularity": 80, "performance": 78, "versatility": 48, "experience": 50, "box_office": 72, "star_power": 79 },
+      "achievements": ["20 Movies", "1200 Total Rating Points", "#61 in Rankings"],
       "movie_count": 20,
       "rating_sum": 1200,
       "google_hits": 2500000
@@ -1338,19 +758,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 83,
-        "performance": 85,
-        "versatility": 50,
-        "experience": 40,
-        "box_office": 73,
-        "star_power": 82
-      },
-      "achievements": [
-        "15 Movies",
-        "1100 Total Rating Points",
-        "#62 in Rankings"
-      ],
+      "age": 32,  // Born 1992
+      "stats": { "popularity": 83, "performance": 85, "versatility": 50, "experience": 40, "box_office": 73, "star_power": 82 },
+      "achievements": ["15 Movies", "1100 Total Rating Points", "#62 in Rankings"],
       "movie_count": 15,
       "rating_sum": 1100,
       "google_hits": 2700000
@@ -1361,19 +771,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 81,
-        "performance": 78,
-        "versatility": 45,
-        "experience": 65,
-        "box_office": 70,
-        "star_power": 79
-      },
-      "achievements": [
-        "50 Movies",
-        "1400 Total Rating Points",
-        "#63 in Rankings"
-      ],
+      "age": 58,  // Born 1967
+      "stats": { "popularity": 81, "performance": 78, "versatility": 45, "experience": 65, "box_office": 70, "star_power": 79 },
+      "achievements": ["50 Movies", "1400 Total Rating Points", "#63 in Rankings"],
       "movie_count": 50,
       "rating_sum": 1400,
       "google_hits": 2500000
@@ -1384,19 +784,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 82,
-        "performance": 90,
-        "versatility": 60,
-        "experience": 70,
-        "box_office": 68,
-        "star_power": 81
-      },
-      "achievements": [
-        "60 Movies",
-        "1900 Total Rating Points",
-        "#64 in Rankings"
-      ],
+      "age": 53,  // Born 1971
+      "stats": { "popularity": 82, "performance": 90, "versatility": 60, "experience": 70, "box_office": 68, "star_power": 81 },
+      "achievements": ["60 Movies", "1900 Total Rating Points", "#64 in Rankings"],
       "movie_count": 60,
       "rating_sum": 1900,
       "google_hits": 2600000
@@ -1407,19 +797,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 80,
-        "versatility": 48,
-        "experience": 50,
-        "box_office": 70,
-        "star_power": 79
-      },
-      "achievements": [
-        "25 Movies",
-        "1200 Total Rating Points",
-        "#65 in Rankings"
-      ],
+      "age": 38,  // Born 1986
+      "stats": { "popularity": 80, "performance": 80, "versatility": 48, "experience": 50, "box_office": 70, "star_power": 79 },
+      "achievements": ["25 Movies", "1200 Total Rating Points", "#65 in Rankings"],
       "movie_count": 25,
       "rating_sum": 1200,
       "google_hits": 2500000
@@ -1430,19 +810,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 84,
-        "performance": 82,
-        "versatility": 50,
-        "experience": 35,
-        "box_office": 75,
-        "star_power": 83
-      },
-      "achievements": [
-        "10 Movies",
-        "1000 Total Rating Points",
-        "#66 in Rankings"
-      ],
+      "age": 27,  // Born 1997
+      "stats": { "popularity": 84, "performance": 82, "versatility": 50, "experience": 35, "box_office": 75, "star_power": 83 },
+      "achievements": ["10 Movies", "1000 Total Rating Points", "#66 in Rankings"],
       "movie_count": 10,
       "rating_sum": 1000,
       "google_hits": 2800000
@@ -1453,19 +823,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 82,
-        "performance": 85,
-        "versatility": 52,
-        "experience": 40,
-        "box_office": 72,
-        "star_power": 81
-      },
-      "achievements": [
-        "15 Movies",
-        "1100 Total Rating Points",
-        "#67 in Rankings"
-      ],
+      "age": 33,  // Born 1992
+      "stats": { "popularity": 82, "performance": 85, "versatility": 52, "experience": 40, "box_office": 72, "star_power": 81 },
+      "achievements": ["15 Movies", "1100 Total Rating Points", "#67 in Rankings"],
       "movie_count": 15,
       "rating_sum": 1100,
       "google_hits": 2600000
@@ -1476,19 +836,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 79,
-        "performance": 78,
-        "versatility": 45,
-        "experience": 55,
-        "box_office": 68,
-        "star_power": 77
-      },
-      "achievements": [
-        "30 Movies",
-        "1300 Total Rating Points",
-        "#68 in Rankings"
-      ],
+      "age": 51,  // Born 1974
+      "stats": { "popularity": 79, "performance": 78, "versatility": 45, "experience": 55, "box_office": 68, "star_power": 77 },
+      "achievements": ["30 Movies", "1300 Total Rating Points", "#68 in Rankings"],
       "movie_count": 30,
       "rating_sum": 1300,
       "google_hits": 2400000
@@ -1499,19 +849,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 82,
-        "versatility": 48,
-        "experience": 65,
-        "box_office": 68,
-        "star_power": 78
-      },
-      "achievements": [
-        "60 Movies",
-        "1600 Total Rating Points",
-        "#69 in Rankings"
-      ],
+      "age": 50,  // Born 1974
+      "stats": { "popularity": 80, "performance": 82, "versatility": 48, "experience": 65, "box_office": 68, "star_power": 78 },
+      "achievements": ["60 Movies", "1600 Total Rating Points", "#69 in Rankings"],
       "movie_count": 60,
       "rating_sum": 1600,
       "google_hits": 2500000
@@ -1522,19 +862,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 78,
-        "versatility": 45,
-        "experience": 60,
-        "box_office": 68,
-        "star_power": 79
-      },
-      "achievements": [
-        "40 Movies",
-        "1400 Total Rating Points",
-        "#70 in Rankings"
-      ],
+      "age": 49,  // Born 1975
+      "stats": { "popularity": 80, "performance": 78, "versatility": 45, "experience": 60, "box_office": 68, "star_power": 79 },
+      "achievements": ["40 Movies", "1400 Total Rating Points", "#70 in Rankings"],
       "movie_count": 40,
       "rating_sum": 1400,
       "google_hits": 2600000
@@ -1545,19 +875,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 81,
-        "performance": 80,
-        "versatility": 50,
-        "experience": 55,
-        "box_office": 70,
-        "star_power": 79
-      },
-      "achievements": [
-        "40 Movies",
-        "1500 Total Rating Points",
-        "#71 in Rankings"
-      ],
+      "age": 46,  // Born 1978
+      "stats": { "popularity": 81, "performance": 80, "versatility": 50, "experience": 55, "box_office": 70, "star_power": 79 },
+      "achievements": ["40 Movies", "1500 Total Rating Points", "#71 in Rankings"],
       "movie_count": 40,
       "rating_sum": 1500,
       "google_hits": 2500000
@@ -1568,19 +888,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 81,
-        "performance": 76,
-        "versatility": 45,
-        "experience": 50,
-        "box_office": 72,
-        "star_power": 80
-      },
-      "achievements": [
-        "20 Movies",
-        "1200 Total Rating Points",
-        "#72 in Rankings"
-      ],
+      "age": 39,  // Born 1985
+      "stats": { "popularity": 81, "performance": 76, "versatility": 45, "experience": 50, "box_office": 72, "star_power": 80 },
+      "achievements": ["20 Movies", "1200 Total Rating Points", "#72 in Rankings"],
       "movie_count": 20,
       "rating_sum": 1200,
       "google_hits": 2700000
@@ -1591,19 +901,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 82,
-        "performance": 85,
-        "versatility": 55,
-        "experience": 85,
-        "box_office": 70,
-        "star_power": 80
-      },
-      "achievements": [
-        "Over 100 Movies",
-        "2200 Total Rating Points",
-        "#73 in Rankings"
-      ],
+      "age": 68,  // Born 1956
+      "stats": { "popularity": 82, "performance": 85, "versatility": 55, "experience": 85, "box_office": 70, "star_power": 80 },
+      "achievements": ["Over 100 Movies", "2200 Total Rating Points", "#73 in Rankings"],
       "movie_count": 110,
       "rating_sum": 2200,
       "google_hits": 2600000
@@ -1614,19 +914,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 80,
-        "versatility": 48,
-        "experience": 50,
-        "box_office": 70,
-        "star_power": 79
-      },
-      "achievements": [
-        "25 Movies",
-        "1300 Total Rating Points",
-        "#74 in Rankings"
-      ],
+      "age": 39,  // Born 1985
+      "stats": { "popularity": 80, "performance": 80, "versatility": 48, "experience": 50, "box_office": 70, "star_power": 79 },
+      "achievements": ["25 Movies", "1300 Total Rating Points", "#74 in Rankings"],
       "movie_count": 25,
       "rating_sum": 1300,
       "google_hits": 2500000
@@ -1637,19 +927,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 78,
-        "versatility": 45,
-        "experience": 35,
-        "box_office": 70,
-        "star_power": 79
-      },
-      "achievements": [
-        "10 Movies",
-        "900 Total Rating Points",
-        "#75 in Rankings"
-      ],
+      "age": 27,  // Born 1997
+      "stats": { "popularity": 80, "performance": 78, "versatility": 45, "experience": 35, "box_office": 70, "star_power": 79 },
+      "achievements": ["10 Movies", "900 Total Rating Points", "#75 in Rankings"],
       "movie_count": 10,
       "rating_sum": 900,
       "google_hits": 2600000
@@ -1660,19 +940,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 81,
-        "performance": 87,
-        "versatility": 58,
-        "experience": 50,
-        "box_office": 68,
-        "star_power": 80
-      },
-      "achievements": [
-        "25 Movies",
-        "1400 Total Rating Points",
-        "#76 in Rankings"
-      ],
+      "age": 39,  // Born 1985
+      "stats": { "popularity": 81, "performance": 87, "versatility": 58, "experience": 50, "box_office": 68, "star_power": 80 },
+      "achievements": ["25 Movies", "1400 Total Rating Points", "#76 in Rankings"],
       "movie_count": 25,
       "rating_sum": 1400,
       "google_hits": 2500000
@@ -1683,19 +953,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 85,
-        "versatility": 55,
-        "experience": 48,
-        "box_office": 68,
-        "star_power": 79
-      },
-      "achievements": [
-        "20 Movies",
-        "1300 Total Rating Points",
-        "#77 in Rankings"
-      ],
+      "age": 38,  // Born 1986
+      "stats": { "popularity": 80, "performance": 85, "versatility": 55, "experience": 48, "box_office": 68, "star_power": 79 },
+      "achievements": ["20 Movies", "1300 Total Rating Points", "#77 in Rankings"],
       "movie_count": 20,
       "rating_sum": 1300,
       "google_hits": 2400000
@@ -1706,19 +966,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 81,
-        "performance": 78,
-        "versatility": 45,
-        "experience": 38,
-        "box_office": 70,
-        "star_power": 80
-      },
-      "achievements": [
-        "10 Movies",
-        "900 Total Rating Points",
-        "#78 in Rankings"
-      ],
+      "age": 29,  // Born 1995
+      "stats": { "popularity": 81, "performance": 78, "versatility": 45, "experience": 38, "box_office": 70, "star_power": 80 },
+      "achievements": ["10 Movies", "900 Total Rating Points", "#78 in Rankings"],
       "movie_count": 10,
       "rating_sum": 900,
       "google_hits": 2600000
@@ -1729,19 +979,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 82,
-        "versatility": 50,
-        "experience": 55,
-        "box_office": 68,
-        "star_power": 79
-      },
-      "achievements": [
-        "30 Movies",
-        "1400 Total Rating Points",
-        "#79 in Rankings"
-      ],
+      "age": 41,  // Born 1983
+      "stats": { "popularity": 80, "performance": 82, "versatility": 50, "experience": 55, "box_office": 68, "star_power": 79 },
+      "achievements": ["30 Movies", "1400 Total Rating Points", "#79 in Rankings"],
       "movie_count": 30,
       "rating_sum": 1400,
       "google_hits": 2400000
@@ -1752,19 +992,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 83,
-        "performance": 80,
-        "versatility": 48,
-        "experience": 45,
-        "box_office": 75,
-        "star_power": 82
-      },
-      "achievements": [
-        "15 Movies",
-        "1200 Total Rating Points",
-        "#80 in Rankings"
-      ],
+      "age": 34,  // Born 1990
+      "stats": { "popularity": 83, "performance": 80, "versatility": 48, "experience": 45, "box_office": 75, "star_power": 82 },
+      "achievements": ["15 Movies", "1200 Total Rating Points", "#80 in Rankings"],
       "movie_count": 15,
       "rating_sum": 1200,
       "google_hits": 2700000
@@ -1775,19 +1005,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 85,
-        "performance": 95,
-        "versatility": 60,
-        "experience": 90,
-        "box_office": 65,
-        "star_power": 88
-      },
-      "achievements": [
-        "Over 60 Movies",
-        "3000 Total Rating Points",
-        "Legendary Status"
-      ],
+      "age": 102,  // Born 1922 (deceased 2021, age at death + years to 2025)
+      "stats": { "popularity": 85, "performance": 95, "versatility": 60, "experience": 90, "box_office": 65, "star_power": 88 },
+      "achievements": ["Over 60 Movies", "3000 Total Rating Points", "Legendary Status"],
       "movie_count": 65,
       "rating_sum": 3000,
       "google_hits": 3500000
@@ -1798,19 +1018,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 83,
-        "performance": 90,
-        "versatility": 55,
-        "experience": 85,
-        "box_office": 60,
-        "star_power": 87
-      },
-      "achievements": [
-        "Over 70 Movies",
-        "2800 Total Rating Points",
-        "Iconic Showman"
-      ],
+      "age": 100,  // Born 1924 (deceased 1988, age at death + years to 2025)
+      "stats": { "popularity": 83, "performance": 90, "versatility": 55, "experience": 85, "box_office": 60, "star_power": 87 },
+      "achievements": ["Over 70 Movies", "2800 Total Rating Points", "Iconic Showman"],
       "movie_count": 75,
       "rating_sum": 2800,
       "google_hits": 3200000
@@ -1821,19 +1031,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 82,
-        "performance": 88,
-        "versatility": 58,
-        "experience": 90,
-        "box_office": 62,
-        "star_power": 86
-      },
-      "achievements": [
-        "Over 100 Movies",
-        "2900 Total Rating Points",
-        "Evergreen Star"
-      ],
+      "age": 101,  // Born 1923 (deceased 2011, age at death + years to 2025)
+      "stats": { "popularity": 82, "performance": 88, "versatility": 58, "experience": 90, "box_office": 62, "star_power": 86 },
+      "achievements": ["Over 100 Movies", "2900 Total Rating Points", "Evergreen Star"],
       "movie_count": 110,
       "rating_sum": 2900,
       "google_hits": 3100000
@@ -1844,19 +1044,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 84,
-        "performance": 85,
-        "versatility": 50,
-        "experience": 90,
-        "box_office": 70,
-        "star_power": 85
-      },
-      "achievements": [
-        "Over 200 Movies",
-        "3100 Total Rating Points",
-        "He-Man of Bollywood"
-      ],
+      "age": 89,  // Born 1935
+      "stats": { "popularity": 84, "performance": 85, "versatility": 50, "experience": 90, "box_office": 70, "star_power": 85 },
+      "achievements": ["Over 200 Movies", "3100 Total Rating Points", "He-Man of Bollywood"],
       "movie_count": 210,
       "rating_sum": 3100,
       "google_hits": 3300000
@@ -1867,19 +1057,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 82,
-        "performance": 87,
-        "versatility": 52,
-        "experience": 85,
-        "box_office": 68,
-        "star_power": 83
-      },
-      "achievements": [
-        "Over 150 Movies",
-        "2700 Total Rating Points",
-        "Dream Girl"
-      ],
+      "age": 76,  // Born 1948
+      "stats": { "popularity": 82, "performance": 87, "versatility": 52, "experience": 85, "box_office": 68, "star_power": 83 },
+      "achievements": ["Over 150 Movies", "2700 Total Rating Points", "Dream Girl"],
       "movie_count": 155,
       "rating_sum": 2700,
       "google_hits": 3000000
@@ -1890,19 +1070,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 83,
-        "performance": 92,
-        "versatility": 60,
-        "experience": 85,
-        "box_office": 65,
-        "star_power": 84
-      },
-      "achievements": [
-        "Over 180 Movies",
-        "2900 Total Rating Points",
-        "Timeless Diva"
-      ],
+      "age": 70,  // Born 1954
+      "stats": { "popularity": 83, "performance": 92, "versatility": 60, "experience": 85, "box_office": 65, "star_power": 84 },
+      "achievements": ["Over 180 Movies", "2900 Total Rating Points", "Timeless Diva"],
       "movie_count": 185,
       "rating_sum": 2900,
       "google_hits": 3100000
@@ -1913,19 +1083,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 85,
-        "versatility": 55,
-        "experience": 80,
-        "box_office": 60,
-        "star_power": 82
-      },
-      "achievements": [
-        "Over 70 Movies",
-        "2600 Total Rating Points",
-        "Yahoo Star"
-      ],
+      "age": 93,  // Born 1931 (deceased 2011, age at death + years to 2025)
+      "stats": { "popularity": 80, "performance": 85, "versatility": 55, "experience": 80, "box_office": 60, "star_power": 82 },
+      "achievements": ["Over 70 Movies", "2600 Total Rating Points", "Yahoo Star"],
       "movie_count": 75,
       "rating_sum": 2600,
       "google_hits": 2800000
@@ -1936,19 +1096,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 85,
-        "performance": 93,
-        "versatility": 65,
-        "experience": 80,
-        "box_office": 70,
-        "star_power": 86
-      },
-      "achievements": [
-        "Over 200 Movies",
-        "3100 Total Rating Points",
-        "First Female Superstar"
-      ],
+      "age": 61,  // Born 1963 (deceased 2018, age at death + years to 2025)
+      "stats": { "popularity": 85, "performance": 93, "versatility": 65, "experience": 80, "box_office": 70, "star_power": 86 },
+      "achievements": ["Over 200 Movies", "3100 Total Rating Points", "First Female Superstar"],
       "movie_count": 205,
       "rating_sum": 3100,
       "google_hits": 3400000
@@ -1959,19 +1109,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 80,
-        "versatility": 48,
-        "experience": 85,
-        "box_office": 68,
-        "star_power": 80
-      },
-      "achievements": [
-        "Over 200 Movies",
-        "2800 Total Rating Points",
-        "Jumping Jack"
-      ],
+      "age": 82,  // Born 1942
+      "stats": { "popularity": 80, "performance": 80, "versatility": 48, "experience": 85, "box_office": 68, "star_power": 80 },
+      "achievements": ["Over 200 Movies", "2800 Total Rating Points", "Jumping Jack"],
       "movie_count": 210,
       "rating_sum": 2800,
       "google_hits": 2700000
@@ -1982,19 +1122,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 82,
-        "performance": 87,
-        "versatility": 55,
-        "experience": 85,
-        "box_office": 68,
-        "star_power": 83
-      },
-      "achievements": [
-        "Over 150 Movies",
-        "2900 Total Rating Points",
-        "Romantic Icon"
-      ],
+      "age": 72,  // Born 1952 (deceased 2020, age at death + years to 2025)
+      "stats": { "popularity": 82, "performance": 87, "versatility": 55, "experience": 85, "box_office": 68, "star_power": 83 },
+      "achievements": ["Over 150 Movies", "2900 Total Rating Points", "Romantic Icon"],
       "movie_count": 155,
       "rating_sum": 2900,
       "google_hits": 3000000
@@ -2005,19 +1135,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 85,
-        "versatility": 50,
-        "experience": 80,
-        "box_office": 65,
-        "star_power": 81
-      },
-      "achievements": [
-        "Over 140 Movies",
-        "2700 Total Rating Points",
-        "Handsome Hero"
-      ],
+      "age": 78,  // Born 1946 (deceased 2017, age at death + years to 2025)
+      "stats": { "popularity": 80, "performance": 85, "versatility": 50, "experience": 80, "box_office": 65, "star_power": 81 },
+      "achievements": ["Over 140 Movies", "2700 Total Rating Points", "Handsome Hero"],
       "movie_count": 145,
       "rating_sum": 2700,
       "google_hits": 2800000
@@ -2028,19 +1148,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 82,
-        "versatility": 50,
-        "experience": 85,
-        "box_office": 65,
-        "star_power": 80
-      },
-      "achievements": [
-        "Over 200 Movies",
-        "2600 Total Rating Points",
-        "Shotgun Star"
-      ],
+      "age": 79,  // Born 1945
+      "stats": { "popularity": 80, "performance": 82, "versatility": 50, "experience": 85, "box_office": 65, "star_power": 80 },
+      "achievements": ["Over 200 Movies", "2600 Total Rating Points", "Shotgun Star"],
       "movie_count": 205,
       "rating_sum": 2600,
       "google_hits": 2700000
@@ -2051,19 +1161,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 82,
-        "performance": 85,
-        "versatility": 55,
-        "experience": 90,
-        "box_office": 70,
-        "star_power": 82
-      },
-      "achievements": [
-        "Over 300 Movies",
-        "3000 Total Rating Points",
-        "Disco Dancer"
-      ],
+      "age": 74,  // Born 1950
+      "stats": { "popularity": 82, "performance": 85, "versatility": 55, "experience": 90, "box_office": 70, "star_power": 82 },
+      "achievements": ["Over 300 Movies", "3000 Total Rating Points", "Disco Dancer"],
       "movie_count": 310,
       "rating_sum": 3000,
       "google_hits": 2900000
@@ -2074,19 +1174,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 88,
-        "versatility": 55,
-        "experience": 80,
-        "box_office": 65,
-        "star_power": 81
-      },
-      "achievements": [
-        "Over 50 Movies",
-        "2500 Total Rating Points",
-        "Classic Performer"
-      ],
+      "age": 76,  // Born 1948
+      "stats": { "popularity": 80, "performance": 88, "versatility": 55, "experience": 80, "box_office": 65, "star_power": 81 },
+      "achievements": ["Over 50 Movies", "2500 Total Rating Points", "Classic Performer"],
       "movie_count": 55,
       "rating_sum": 2500,
       "google_hits": 2600000
@@ -2097,19 +1187,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 90,
-        "versatility": 60,
-        "experience": 90,
-        "box_office": 60,
-        "star_power": 83
-      },
-      "achievements": [
-        "Over 300 Movies",
-        "2800 Total Rating Points",
-        "Pioneer of Bollywood"
-      ],
+      "age": 113,  // Born 1911 (deceased 2001, age at death + years to 2025)
+      "stats": { "popularity": 80, "performance": 90, "versatility": 60, "experience": 90, "box_office": 60, "star_power": 83 },
+      "achievements": ["Over 300 Movies", "2800 Total Rating Points", "Pioneer of Bollywood"],
       "movie_count": 305,
       "rating_sum": 2800,
       "google_hits": 2700000
@@ -2120,19 +1200,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 87,
-        "versatility": 55,
-        "experience": 80,
-        "box_office": 65,
-        "star_power": 82
-      },
-      "achievements": [
-        "Over 100 Movies",
-        "2700 Total Rating Points",
-        "Gentleman Actor"
-      ],
+      "age": 95,  // Born 1929 (deceased 2005, age at death + years to 2025)
+      "stats": { "popularity": 80, "performance": 87, "versatility": 55, "experience": 80, "box_office": 65, "star_power": 82 },
+      "achievements": ["Over 100 Movies", "2700 Total Rating Points", "Gentleman Actor"],
       "movie_count": 105,
       "rating_sum": 2700,
       "google_hits": 2800000
@@ -2143,19 +1213,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 82,
-        "performance": 95,
-        "versatility": 70,
-        "experience": 85,
-        "box_office": 65,
-        "star_power": 83
-      },
-      "achievements": [
-        "Over 200 Movies",
-        "3100 Total Rating Points",
-        "Acting Maestro"
-      ],
+      "age": 74,  // Born 1950
+      "stats": { "popularity": 82, "performance": 95, "versatility": 70, "experience": 85, "box_office": 65, "star_power": 83 },
+      "achievements": ["Over 200 Movies", "3100 Total Rating Points", "Acting Maestro"],
       "movie_count": 205,
       "rating_sum": 3100,
       "google_hits": 2900000
@@ -2166,19 +1226,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 90,
-        "versatility": 55,
-        "experience": 70,
-        "box_office": 65,
-        "star_power": 82
-      },
-      "achievements": [
-        "Over 130 Movies",
-        "2600 Total Rating Points",
-        "Iconic Villain"
-      ],
+      "age": 84,  // Born 1940 (deceased 1992, age at death + years to 2025)
+      "stats": { "popularity": 80, "performance": 90, "versatility": 55, "experience": 70, "box_office": 65, "star_power": 82 },
+      "achievements": ["Over 130 Movies", "2600 Total Rating Points", "Iconic Villain"],
       "movie_count": 135,
       "rating_sum": 2600,
       "google_hits": 2700000
@@ -2189,19 +1239,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 88,
-        "versatility": 50,
-        "experience": 80,
-        "box_office": 65,
-        "star_power": 81
-      },
-      "achievements": [
-        "Over 100 Movies",
-        "2500 Total Rating Points",
-        "Emotional Powerhouse"
-      ],
+      "age": 77,  // Born 1947
+      "stats": { "popularity": 80, "performance": 88, "versatility": 50, "experience": 80, "box_office": 65, "star_power": 81 },
+      "achievements": ["Over 100 Movies", "2500 Total Rating Points", "Emotional Powerhouse"],
       "movie_count": 105,
       "rating_sum": 2500,
       "google_hits": 2600000
@@ -2212,43 +1252,22 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 93,
-        "versatility": 65,
-        "experience": 85,
-        "box_office": 65,
-        "star_power": 82
-      },
-      "achievements": [
-        "Over 200 Movies",
-        "3000 Total Rating Points",
-        "Versatile Veteran"
-      ],
+      "age": 74,  // Born 1950 (deceased 2017, age at death + years to 2025)
+      "stats": { "popularity": 80, "performance": 93, "versatility": 65, "experience": 85, "box_office": 65, "star_power": 82 },
+      "achievements": ["Over 200 Movies", "3000 Total Rating Points", "Versatile Veteran"],
       "movie_count": 205,
       "rating_sum": 3000,
       "google_hits": 2800000
     }
   },
-  // Additional 20 Upcoming Stars (Debuted 2022-2025) Start Here
   {
     "name": "Suhana Khan",
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 85,
-        "performance": 78,
-        "versatility": 45,
-        "experience": 15,
-        "box_office": 70,
-        "star_power": 82
-      },
-      "achievements": [
-        "Debut in The Archies (2023)",
-        "500 Total Rating Points",
-        "#81 in Rankings"
-      ],
+      "age": 24,  // Born 2000
+      "stats": { "popularity": 85, "performance": 78, "versatility": 45, "experience": 15, "box_office": 70, "star_power": 82 },
+      "achievements": ["Debut in The Archies (2023)", "500 Total Rating Points", "#81 in Rankings"],
       "movie_count": 1,
       "rating_sum": 500,
       "google_hits": 2900000
@@ -2259,19 +1278,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 84,
-        "performance": 77,
-        "versatility": 45,
-        "experience": 15,
-        "box_office": 70,
-        "star_power": 81
-      },
-      "achievements": [
-        "Debut in The Archies (2023)",
-        "500 Total Rating Points",
-        "#82 in Rankings"
-      ],
+      "age": 24,  // Born 2000
+      "stats": { "popularity": 84, "performance": 77, "versatility": 45, "experience": 15, "box_office": 70, "star_power": 81 },
+      "achievements": ["Debut in The Archies (2023)", "500 Total Rating Points", "#82 in Rankings"],
       "movie_count": 1,
       "rating_sum": 500,
       "google_hits": 2800000
@@ -2282,19 +1291,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 83,
-        "performance": 80,
-        "versatility": 48,
-        "experience": 15,
-        "box_office": 70,
-        "star_power": 80
-      },
-      "achievements": [
-        "Debut in The Archies (2023)",
-        "550 Total Rating Points",
-        "#83 in Rankings"
-      ],
+      "age": 24,  // Born 2000
+      "stats": { "popularity": 83, "performance": 80, "versatility": 48, "experience": 15, "box_office": 70, "star_power": 80 },
+      "achievements": ["Debut in The Archies (2023)", "550 Total Rating Points", "#83 in Rankings"],
       "movie_count": 2,
       "rating_sum": 550,
       "google_hits": 2700000
@@ -2305,19 +1304,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 82,
-        "performance": 79,
-        "versatility": 46,
-        "experience": 15,
-        "box_office": 68,
-        "star_power": 80
-      },
-      "achievements": [
-        "Debut in Farrey (2023)",
-        "500 Total Rating Points",
-        "#84 in Rankings"
-      ],
+      "age": 23,  // Born 2001 (estimated)
+      "stats": { "popularity": 82, "performance": 79, "versatility": 46, "experience": 15, "box_office": 68, "star_power": 80 },
+      "achievements": ["Debut in Farrey (2023)", "500 Total Rating Points", "#84 in Rankings"],
       "movie_count": 1,
       "rating_sum": 500,
       "google_hits": 2600000
@@ -2328,19 +1317,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 81,
-        "performance": 78,
-        "versatility": 47,
-        "experience": 15,
-        "box_office": 70,
-        "star_power": 79
-      },
-      "achievements": [
-        "Debut in The Archies (2023)",
-        "500 Total Rating Points",
-        "#85 in Rankings"
-      ],
+      "age": 24,  // Born 2000 (estimated)
+      "stats": { "popularity": 81, "performance": 78, "versatility": 47, "experience": 15, "box_office": 70, "star_power": 79 },
+      "achievements": ["Debut in The Archies (2023)", "500 Total Rating Points", "#85 in Rankings"],
       "movie_count": 1,
       "rating_sum": 500,
       "google_hits": 2500000
@@ -2351,19 +1330,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 83,
-        "performance": 82,
-        "versatility": 50,
-        "experience": 20,
-        "box_office": 75,
-        "star_power": 81
-      },
-      "achievements": [
-        "Debut in Kill (2024)",
-        "600 Total Rating Points",
-        "#86 in Rankings"
-      ],
+      "age": 28,  // Born 1996
+      "stats": { "popularity": 83, "performance": 82, "versatility": 50, "experience": 20, "box_office": 75, "star_power": 81 },
+      "achievements": ["Debut in Kill (2024)", "600 Total Rating Points", "#86 in Rankings"],
       "movie_count": 1,
       "rating_sum": 600,
       "google_hits": 2700000
@@ -2374,19 +1343,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 84,
-        "performance": 83,
-        "versatility": 48,
-        "experience": 20,
-        "box_office": 72,
-        "star_power": 82
-      },
-      "achievements": [
-        "Debut in Maharaj (2024)",
-        "600 Total Rating Points",
-        "#87 in Rankings"
-      ],
+      "age": 31,  // Born 1993
+      "stats": { "popularity": 84, "performance": 83, "versatility": 48, "experience": 20, "box_office": 72, "star_power": 82 },
+      "achievements": ["Debut in Maharaj (2024)", "600 Total Rating Points", "#87 in Rankings"],
       "movie_count": 1,
       "rating_sum": 600,
       "google_hits": 2800000
@@ -2397,19 +1356,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 82,
-        "performance": 78,
-        "versatility": 45,
-        "experience": 20,
-        "box_office": 70,
-        "star_power": 80
-      },
-      "achievements": [
-        "Debut in Ishq Vishk Rebound (2024)",
-        "500 Total Rating Points",
-        "#88 in Rankings"
-      ],
+      "age": 29,  // Born 1995 (estimated)
+      "stats": { "popularity": 82, "performance": 78, "versatility": 45, "experience": 20, "box_office": 70, "star_power": 80 },
+      "achievements": ["Debut in Ishq Vishk Rebound (2024)", "500 Total Rating Points", "#88 in Rankings"],
       "movie_count": 1,
       "rating_sum": 500,
       "google_hits": 2600000
@@ -2420,19 +1369,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 81,
-        "performance": 77,
-        "versatility": 45,
-        "experience": 20,
-        "box_office": 68,
-        "star_power": 79
-      },
-      "achievements": [
-        "Debut in Untitled (2024)",
-        "500 Total Rating Points",
-        "#89 in Rankings"
-      ],
+      "age": 20,  // Born 2004 (estimated)
+      "stats": { "popularity": 81, "performance": 77, "versatility": 45, "experience": 20, "box_office": 68, "star_power": 79 },
+      "achievements": ["Debut in Untitled (2024)", "500 Total Rating Points", "#89 in Rankings"],
       "movie_count": 1,
       "rating_sum": 500,
       "google_hits": 2500000
@@ -2443,19 +1382,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 83,
-        "performance": 80,
-        "versatility": 46,
-        "experience": 20,
-        "box_office": 70,
-        "star_power": 81
-      },
-      "achievements": [
-        "Debut in Sarzameen (2024)",
-        "550 Total Rating Points",
-        "#90 in Rankings"
-      ],
+      "age": 24,  // Born 2001
+      "stats": { "popularity": 83, "performance": 80, "versatility": 46, "experience": 20, "box_office": 70, "star_power": 81 },
+      "achievements": ["Debut in Sarzameen (2024)", "550 Total Rating Points", "#90 in Rankings"],
       "movie_count": 1,
       "rating_sum": 550,
       "google_hits": 2700000
@@ -2466,19 +1395,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 84,
-        "performance": 78,
-        "versatility": 45,
-        "experience": 20,
-        "box_office": 70,
-        "star_power": 81
-      },
-      "achievements": [
-        "Debut in Vrushabha (2024)",
-        "500 Total Rating Points",
-        "#91 in Rankings"
-      ],
+      "age": 25,  // Born 1999
+      "stats": { "popularity": 84, "performance": 78, "versatility": 45, "experience": 20, "box_office": 70, "star_power": 81 },
+      "achievements": ["Debut in Vrushabha (2024)", "500 Total Rating Points", "#91 in Rankings"],
       "movie_count": 1,
       "rating_sum": 500,
       "google_hits": 2800000
@@ -2489,19 +1408,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 77,
-        "versatility": 45,
-        "experience": 15,
-        "box_office": 68,
-        "star_power": 79
-      },
-      "achievements": [
-        "Debut in Untitled Mohit Suri Film (2025)",
-        "450 Total Rating Points",
-        "#92 in Rankings"
-      ],
+      "age": 27,  // Born 1997 (estimated)
+      "stats": { "popularity": 80, "performance": 77, "versatility": 45, "experience": 15, "box_office": 68, "star_power": 79 },
+      "achievements": ["Debut in Untitled Mohit Suri Film (2025)", "450 Total Rating Points", "#92 in Rankings"],
       "movie_count": 1,
       "rating_sum": 450,
       "google_hits": 2400000
@@ -2512,19 +1421,9 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 81,
-        "performance": 79,
-        "versatility": 46,
-        "experience": 20,
-        "box_office": 70,
-        "star_power": 80
-      },
-      "achievements": [
-        "Debut in Ishq Vishk Rebound (2024)",
-        "500 Total Rating Points",
-        "#93 in Rankings"
-      ],
+      "age": 31,  // Born 1993 (child actor, adult debut 2024)
+      "stats": { "popularity": 81, "performance": 79, "versatility": 46, "experience": 20, "box_office": 70, "star_power": 80 },
+      "achievements": ["Debut in Ishq Vishk Rebound (2024)", "500 Total Rating Points", "#93 in Rankings"],
       "movie_count": 1,
       "rating_sum": 500,
       "google_hits": 2500000
@@ -2535,184 +1434,103 @@ const bollywoodActors = [
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 76,
-        "versatility": 45,
-        "experience": 15,
-        "box_office": 68,
-        "star_power": 78
-      },
-      "achievements": [
-        "Debut in The Archies (2023)",
-        "450 Total Rating Points",
-        "#94 in Rankings"
-      ],
+      "age": 23,  // Born 2001 (estimated based on debut age)
+      "stats": { "popularity": 80, "performance": 76, "versatility": 45, "experience": 15, "box_office": 68, "star_power": 78 },
+      "achievements": ["Debut in The Archies (2023)", "450 Total Rating Points", "#94 in Rankings"],
       "movie_count": 1,
       "rating_sum": 450,
       "google_hits": 2300000
     }
   },
   {
-    "name": "Aditi Saigal (Dot)",
+    "name": "Avantika Vandanapu",
     "attributes": {
       "role": "Actor",
-      "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 80,
-        "versatility": 48,
-        "experience": 15,
-        "box_office": 68,
-        "star_power": 79
-      },
-      "achievements": [
-        "Debut in The Archies (2023)",
-        "500 Total Rating Points",
-        "#95 in Rankings"
-      ],
+      "nationality": "Indian-American",
+      "age": 20,  // Born 2005
+      "stats": { "popularity": 82, "performance": 79, "versatility": 48, "experience": 20, "box_office": 70, "star_power": 80 },
+      "achievements": ["Debut in Bollywood with The Archies (2023)", "500 Total Rating Points", "#95 in Rankings"],
       "movie_count": 1,
       "rating_sum": 500,
-      "google_hits": 2400000
+      "google_hits": 2600000
     }
   },
   {
-    "name": "Rijul Ray",
+    "name": "Pratik Gandhi",
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 79,
-        "performance": 81,
-        "versatility": 48,
-        "experience": 15,
-        "box_office": 65,
-        "star_power": 78
-      },
-      "achievements": [
-        "Debut in Adhura (2023)",
-        "450 Total Rating Points",
-        "#96 in Rankings"
-      ],
-      "movie_count": 1,
-      "rating_sum": 450,
-      "google_hits": 2300000
+      "age": 44,  // Born 1980
+      "stats": { "popularity": 83, "performance": 88, "versatility": 60, "experience": 45, "box_office": 72, "star_power": 82 },
+      "achievements": ["Breakout in Scam 1992 (2020)", "1400 Total Rating Points", "#96 in Rankings"],
+      "movie_count": 15,
+      "rating_sum": 1400,
+      "google_hits": 2700000
     }
   },
   {
-    "name": "Zahan Kapoor",
+    "name": "Aparshakti Khurana",
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 83,
-        "versatility": 50,
-        "experience": 15,
-        "box_office": 66,
-        "star_power": 79
-      },
-      "achievements": [
-        "Debut in Faraaz (2023)",
-        "500 Total Rating Points",
-        "#97 in Rankings"
-      ],
-      "movie_count": 1,
-      "rating_sum": 500,
-      "google_hits": 2400000
-    }
-  },
-  {
-    "name": "Paanie Kashyap",
-    "attributes": {
-      "role": "Actor",
-      "nationality": "Indian",
-      "stats": {
-        "popularity": 78,
-        "performance": 79,
-        "versatility": 46,
-        "experience": 15,
-        "box_office": 65,
-        "star_power": 77
-      },
-      "achievements": [
-        "Debut in Pyaar Hai To Hai (2023)",
-        "450 Total Rating Points",
-        "#98 in Rankings"
-      ],
-      "movie_count": 1,
-      "rating_sum": 450,
-      "google_hits": 2200000
-    }
-  },
-  {
-    "name": "Aaman Devgan",
-    "attributes": {
-      "role": "Actor",
-      "nationality": "Indian",
-      "stats": {
-        "popularity": 81,
-        "performance": 78,
-        "versatility": 45,
-        "experience": 20,
-        "box_office": 68,
-        "star_power": 80
-      },
-      "achievements": [
-        "Debut in Untitled Abhishek Kapoor Film (2024)",
-        "500 Total Rating Points",
-        "#99 in Rankings"
-      ],
-      "movie_count": 1,
-      "rating_sum": 500,
+      "age": 37,  // Born 1987
+      "stats": { "popularity": 82, "performance": 84, "versatility": 55, "experience": 40, "box_office": 70, "star_power": 81 },
+      "achievements": ["20 Movies", "1300 Total Rating Points", "#97 in Rankings"],
+      "movie_count": 20,
+      "rating_sum": 1300,
       "google_hits": 2500000
     }
   },
   {
-    "name": "Simar Bhatia",
+    "name": "Ishaan Khatter",
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 80,
-        "performance": 80,
-        "versatility": 47,
-        "experience": 15,
-        "box_office": 70,
-        "star_power": 79
-      },
-      "achievements": [
-        "Debut in Ikkis (2025)",
-        "500 Total Rating Points",
-        "#100 in Rankings"
-      ],
-      "movie_count": 1,
-      "rating_sum": 500,
+      "age": 29,  // Born 1995
+      "stats": { "popularity": 84, "performance": 85, "versatility": 52, "experience": 35, "box_office": 74, "star_power": 83 },
+      "achievements": ["10 Movies", "1100 Total Rating Points", "#98 in Rankings"],
+      "movie_count": 10,
+      "rating_sum": 1100,
+      "google_hits": 2800000
+    }
+  },
+  {
+    "name": "Wamiqa Gabbi",
+    "attributes": {
+      "role": "Actor",
+      "nationality": "Indian",
+      "age": 31,  // Born 1993
+      "stats": { "popularity": 82, "performance": 83, "versatility": 50, "experience": 40, "box_office": 72, "star_power": 81 },
+      "achievements": ["15 Movies", "1200 Total Rating Points", "#99 in Rankings"],
+      "movie_count": 15,
+      "rating_sum": 1200,
+      "google_hits": 2600000
+    }
+  },
+  {
+    "name": "Angad Bedi",
+    "attributes": {
+      "role": "Actor",
+      "nationality": "Indian",
+      "age": 42,  // Born 1983
+      "stats": { "popularity": 80, "performance": 80, "versatility": 48, "experience": 45, "box_office": 70, "star_power": 79 },
+      "achievements": ["15 Movies", "1100 Total Rating Points", "#100 in Rankings"],
+      "movie_count": 15,
+      "rating_sum": 1100,
       "google_hits": 2400000
     }
   },
   {
-    "name": "Veer Pahariya",
+    "name": "Jim Sarbh",
     "attributes": {
       "role": "Actor",
       "nationality": "Indian",
-      "stats": {
-        "popularity": 85,
-        "performance": 82,
-        "versatility": 48,
-        "experience": 15,
-        "box_office": 75,
-        "star_power": 83
-      },
-      "achievements": [
-        "Debut in Sky Force (2025)",
-        "600 Total Rating Points",
-        "#101 in Rankings",
-        "Viral 'Langdi' Dance Step"
-      ],
-      "movie_count": 1,
-      "rating_sum": 600,
-      "google_hits": 2900000
+      "age": 37,  // Born 1987
+      "stats": { "popularity": 81, "performance": 87, "versatility": 58, "experience": 40, "box_office": 70, "star_power": 80 },
+      "achievements": ["15 Movies", "1300 Total Rating Points", "#101 in Rankings"],
+      "movie_count": 15,
+      "rating_sum": 1300,
+      "google_hits": 2500000
     }
   }
 ];
