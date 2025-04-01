@@ -586,6 +586,10 @@ function updateGameStatus(similarity) {
     }, 1800);
 }
 
+function sendFeedback() {
+    window.location.href = 'mailto:singhlavanshu@gmail.com?subject=Contextinho Game Feedback';
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     let touchStartY = 0;
     let touchStartTime = 0;
