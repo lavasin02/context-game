@@ -1582,5 +1582,335 @@ const cricketPlayers = [
       "height": 180,
       "matches": { "tests": 1, "odis": 37, "t20is": 60 }
     }
+  },
+  {
+    "name": "KL Rahul",
+    "attributes": {
+      "role": "Batsman",
+      "batting_style": "right-hand-bat",
+      "bowling_style": "right-arm-medium",
+      "nationality": "India",
+      "teams": ["India", "Lucknow Super Giants"],
+      "stats": {
+        "batting": 88,
+        "bowling": 50,
+        "fielding": 85,
+        "experience": 80,
+        "match_impact": 87,
+        "consistency": 85
+      },
+      "achievements": ["Fastest T20I Fifty by an Indian (14 balls)", "Over 2,000 T20I Runs"],
+      "age": 32, // Born 1992
+      "height": 180,
+      "matches": { "tests": 50, "odis": 75, "t20is": 72 }
+    }
+  },
+  {
+    "name": "Rishabh Pant",
+    "attributes": {
+      "role": "Wicketkeeper-Batsman",
+      "batting_style": "left-hand-bat",
+      "bowling_style": "none",
+      "nationality": "India",
+      "teams": ["India", "Delhi Capitals"],
+      "stats": {
+        "batting": 90,
+        "bowling": 0,
+        "fielding": 92,
+        "experience": 75,
+        "match_impact": 91,
+        "consistency": 85
+      },
+      "achievements": ["Match-winning 89* in Brisbane (2021)", "Fastest Test Fifty by an Indian (28 balls)"],
+      "age": 27, // Born 1997
+      "height": 170,
+      "matches": { "tests": 34, "odis": 30, "t20is": 66 }
+    }
+  },
+  {
+    "name": "Shreyas Iyer",
+    "attributes": {
+      "role": "Batsman",
+      "batting_style": "right-hand-bat",
+      "bowling_style": "right-arm-offbreak",
+      "nationality": "India",
+      "teams": ["India", "Kolkata Knight Riders"],
+      "stats": {
+        "batting": 87,
+        "bowling": 50,
+        "fielding": 85,
+        "experience": 75,
+        "match_impact": 88,
+        "consistency": 86
+      },
+      "achievements": ["Debut Test Century (2021)", "Over 2,000 ODI Runs"],
+      "age": 30, // Born 1994
+      "height": 178,
+      "matches": { "tests": 14, "odis": 51, "t20is": 51 }
+    }
+  },
+  {
+    "name": "Mohammed Siraj",
+    "attributes": {
+      "role": "Bowler",
+      "batting_style": "right-hand-bat",
+      "bowling_style": "right-arm-fast",
+      "nationality": "India",
+      "teams": ["India", "Royal Challengers Bangalore"],
+      "stats": {
+        "batting": 50,
+        "bowling": 92,
+        "fielding": 80,
+        "experience": 75,
+        "match_impact": 90,
+        "consistency": 88
+      },
+      "achievements": ["5-for in Brisbane Test (2021)", "Top-ranked ODI Bowler (2023)"],
+      "age": 31, // Born 1994
+      "height": 178,
+      "matches": { "tests": 27, "odis": 41, "t20is": 10 }
+    }
+  },
+  {
+    "name": "Ishan Kishan",
+    "attributes": {
+      "role": "Wicketkeeper-Batsman",
+      "batting_style": "left-hand-bat",
+      "bowling_style": "none",
+      "nationality": "India",
+      "teams": ["India", "Mumbai Indians"],
+      "stats": {
+        "batting": 88,
+        "bowling": 0,
+        "fielding": 90,
+        "experience": 70,
+        "match_impact": 89,
+        "consistency": 84
+      },
+      "achievements": ["Fastest ODI Double Century (2022)", "Over 1,000 T20I Runs"],
+      "age": 26, // Born 1998
+      "height": 168,
+      "matches": { "tests": 2, "odis": 25, "t20is": 32 }
+    }
+  },
+  {
+    "name": "Shardul Thakur",
+    "attributes": {
+      "role": "All-Rounder",
+      "batting_style": "right-hand-bat",
+      "bowling_style": "right-arm-medium",
+      "nationality": "India",
+      "teams": ["India", "Chennai Super Kings"],
+      "stats": {
+        "batting": 75,
+        "bowling": 85,
+        "fielding": 80,
+        "experience": 75,
+        "match_impact": 87,
+        "consistency": 82
+      },
+      "achievements": ["4 Wickets in an Innings at The Oval (2021)", "Over 50 Test Wickets"],
+      "age": 33, // Born 1991
+      "height": 175,
+      "matches": { "tests": 11, "odis": 47, "t20is": 25 }
+    }
+  },
+  {
+    "name": "Deepak Chahar",
+    "attributes": {
+      "role": "Bowler",
+      "batting_style": "right-hand-bat",
+      "bowling_style": "right-arm-medium",
+      "nationality": "India",
+      "teams": ["India", "Chennai Super Kings"],
+      "stats": {
+        "batting": 60,
+        "bowling": 88,
+        "fielding": 80,
+        "experience": 70,
+        "match_impact": 87,
+        "consistency": 85
+      },
+      "achievements": ["6/7 in T20Is (2019)", "Over 50 ODI Wickets"],
+      "age": 32, // Born 1992
+      "height": 180,
+      "matches": { "tests": 0, "odis": 25, "t20is": 25 }
+    }
+  },
+  {
+    "name": "Yuzvendra Chahal",
+    "attributes": {
+      "role": "Bowler",
+      "batting_style": "right-hand-bat",
+      "bowling_style": "right-arm-legbreak",
+      "nationality": "India",
+      "teams": ["India", "Rajasthan Royals"],
+      "stats": {
+        "batting": 50,
+        "bowling": 90,
+        "fielding": 75,
+        "experience": 80,
+        "match_impact": 89,
+        "consistency": 87
+      },
+      "achievements": ["6/25 in T20Is (2017)", "Most Wickets in T20Is by an Indian"],
+      "age": 34, // Born 1990
+      "height": 168,
+      "matches": { "tests": 0, "odis": 72, "t20is": 80 }
+    }
+  },
+  {
+    "name": "Shubman Gill",
+    "attributes": {
+      "role": "Batsman",
+      "batting_style": "right-hand-bat",
+      "bowling_style": "right-arm-offbreak",
+      "nationality": "India",
+      "teams": ["India", "Gujarat Titans"],
+      "stats": {
+        "batting": 90,
+        "bowling": 50,
+        "fielding": 85,
+        "experience": 75,
+        "match_impact": 89,
+        "consistency": 88
+      },
+      "achievements": ["Double Century in ODIs (2023)", "U-19 World Cup Winner (2018)"],
+      "age": 25, // Born 1999
+      "height": 178,
+      "matches": { "tests": 25, "odis": 44, "t20is": 19 }
+    }
+  },
+  {
+    "name": "Axar Patel",
+    "attributes": {
+      "role": "All-Rounder",
+      "batting_style": "left-hand-bat",
+      "bowling_style": "left-arm-orthodox",
+      "nationality": "India",
+      "teams": ["India", "Delhi Capitals"],
+      "stats": {
+        "batting": 80,
+        "bowling": 88,
+        "fielding": 85,
+        "experience": 75,
+        "match_impact": 88,
+        "consistency": 86
+      },
+      "achievements": ["5/48 in Tests (2021)", "Over 50 T20I Wickets"],
+      "age": 31, // Born 1994
+      "height": 182,
+      "matches": { "tests": 14, "odis": 57, "t20is": 52 }
+    }
+  },
+  {
+    "name": "Prithvi Shaw",
+    "attributes": {
+      "role": "Batsman",
+      "batting_style": "right-hand-bat",
+      "bowling_style": "right-arm-offbreak",
+      "nationality": "India",
+      "teams": ["India", "Delhi Capitals"],
+      "stats": {
+        "batting": 87,
+        "bowling": 50,
+        "fielding": 80,
+        "experience": 70,
+        "match_impact": 85,
+        "consistency": 82
+      },
+      "achievements": ["Youngest Test Debut Centurion for India (2018)", "U-19 World Cup Winner (2018)"],
+      "age": 25, // Born 1999
+      "height": 165,
+      "matches": { "tests": 5, "odis": 6, "t20is": 0 }
+    }
+  },
+  {
+    "name": "Sanju Samson",
+    "attributes": {
+      "role": "Wicketkeeper-Batsman",
+      "batting_style": "right-hand-bat",
+      "bowling_style": "none",
+      "nationality": "India",
+      "teams": ["India", "Rajasthan Royals"],
+      "stats": {
+        "batting": 88,
+        "bowling": 0,
+        "fielding": 90,
+        "experience": 70,
+        "match_impact": 87,
+        "consistency": 84
+      },
+      "achievements": ["Century in T20Is (2024)", "Over 1,000 T20I Runs"],
+      "age": 30, // Born 1994
+      "height": 170,
+      "matches": { "tests": 0, "odis": 16, "t20is": 30 }
+    }
+  },
+  {
+    "name": "Arshdeep Singh",
+    "attributes": {
+      "role": "Bowler",
+      "batting_style": "left-hand-bat",
+      "bowling_style": "left-arm-fast-medium",
+      "nationality": "India",
+      "teams": ["India", "Punjab Kings"],
+      "stats": {
+        "batting": 50,
+        "bowling": 90,
+        "fielding": 80,
+        "experience": 70,
+        "match_impact": 89,
+        "consistency": 87
+      },
+      "achievements": ["Key Role in 2024 T20 World Cup Win", "Over 50 T20I Wickets"],
+      "age": 26, // Born 1999
+      "height": 183,
+      "matches": { "tests": 0, "odis": 6, "t20is": 44 }
+    }
+  },
+  {
+    "name": "Yashasvi Jaiswal",
+    "attributes": {
+      "role": "Batsman",
+      "batting_style": "left-hand-bat",
+      "bowling_style": "right-arm-legbreak",
+      "nationality": "India",
+      "teams": ["India", "Rajasthan Royals"],
+      "stats": {
+        "batting": 91,
+        "bowling": 50,
+        "fielding": 85,
+        "experience": 70,
+        "match_impact": 90,
+        "consistency": 89
+      },
+      "achievements": ["Double Century in Tests (2024)", "U-19 World Cup Top Scorer (2020)"],
+      "age": 23, // Born 2001
+      "height": 168,
+      "matches": { "tests": 11, "odis": 0, "t20is": 17 }
+    }
+  },
+  {
+    "name": "Kuldeep Yadav",
+    "attributes": {
+      "role": "Bowler",
+      "batting_style": "left-hand-bat",
+      "bowling_style": "left-arm-chinaman",
+      "nationality": "India",
+      "teams": ["India", "Delhi Capitals"],
+      "stats": {
+        "batting": 50,
+        "bowling": 92,
+        "fielding": 75,
+        "experience": 75,
+        "match_impact": 90,
+        "consistency": 88
+      },
+      "achievements": ["5/17 in T20Is (2023)", "Hat-trick in ODIs (2019)"],
+      "age": 30, // Born 1994
+      "height": 168,
+      "matches": { "tests": 12, "odis": 103, "t20is": 35 }
+    }
   }
 ];
