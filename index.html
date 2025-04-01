@@ -38,12 +38,30 @@
         <div id="game-start" class="screen">
             <h2>How to Play</h2>
             <div class="game-rules">
-                <ul>
-                    <li>You have 10 attempts to guess the player</li>
-                    <li>Each guess gives you a similarity score</li>
-                    <li>Lower scores mean you're closer</li>
-                    <li>Score of 1 means you've won</li>
-                </ul>
+                <div class="instruction-item">
+                    <div class="instruction-number">1</div>
+                    <div class="instruction-text">
+                        You have <strong>10 attempts</strong> to guess the mystery player
+                    </div>
+                </div>
+                <div class="instruction-item">
+                    <div class="instruction-number">2</div>
+                    <div class="instruction-text">
+                        Each guess gives you a <strong>similarity score</strong> and a helpful hint
+                    </div>
+                </div>
+                <div class="instruction-item">
+                    <div class="instruction-number">3</div>
+                    <div class="instruction-text">
+                        <strong>Lower scores</strong> mean you're getting closer to the correct player
+                    </div>
+                </div>
+                <div class="instruction-item">
+                    <div class="instruction-number">4</div>
+                    <div class="instruction-text">
+                        A score of <strong>1</strong> means you've found the correct player!
+                    </div>
+                </div>
             </div>
             <button onclick="startGame()" class="btn">Start Game</button>
         </div>

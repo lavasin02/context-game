@@ -92,6 +92,32 @@ h1 {
     border: 1px solid var(--border-color);
     color: var(--text-primary);
     min-height: 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.mode-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.mode-btn:active::after {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 1;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.mode-btn:active {
+    transform: scale(0.98);
+    opacity: 0.9;
 }
 
 .mode-btn span {
@@ -100,9 +126,9 @@ h1 {
 
 .game-rules {
     background: var(--input-bg);
-    padding: 16px;
+    padding: 20px;
     border-radius: 12px;
-    margin: 16px 0;
+    margin: 20px 0;
     border: 1px solid var(--border-color);
 }
 
@@ -180,6 +206,9 @@ input[type="text"]::placeholder {
     flex: 1;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    overscroll-behavior: contain;
+    padding: 8px;
 }
 
 .guess-item {
@@ -188,6 +217,8 @@ input[type="text"]::placeholder {
     display: flex;
     align-items: center;
     gap: 16px;
+    position: relative;
+    overflow: hidden;
 }
 
 .guess-item-content {
@@ -196,6 +227,10 @@ input[type="text"]::placeholder {
 
 .guess-item:last-child {
     border-bottom: none;
+}
+
+.guess-item:active {
+    background: rgba(255, 255, 255, 0.03);
 }
 
 .feedback-number {
@@ -208,66 +243,103 @@ input[type="text"]::placeholder {
     align-items: center;
     justify-content: center;
     color: white;
+    user-select: none;
+    -webkit-user-select: none;
+    cursor: pointer;
 }
 
 .feedback-number[data-score="1"] {
     background: #4CAF50;
+    box-shadow: 0 0 15px rgba(76, 175, 80, 0.3);
 }
 
 .feedback-number[data-score="close"] {
     background: #FF9800;
+    box-shadow: 0 0 10px rgba(255, 152, 0, 0.2);
 }
 
 .feedback-number[data-score="warm"] {
     background: #FFC107;
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.2);
 }
 
 .feedback-number[data-score="cold"] {
     background: #90A4AE;
+    box-shadow: 0 0 10px rgba(144, 164, 174, 0.2);
 }
 
 .feedback-number[data-score="far"] {
     background: #607D8B;
+    box-shadow: 0 0 10px rgba(96, 125, 139, 0.2);
+}
+
+.feedback-number:active {
+    transform: scale(0.95);
+}
+
+.game-feedback {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-weight: 500;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 .hint {
-    margin-top: 8px;
-    padding: 8px;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
-    font-size: 14px;
-    color: var(--text-secondary);
-}
-
-.player-reveal {
-    background: var(--input-bg);
-    padding: 16px;
+    position: relative;
+    padding: 12px;
     border-radius: 12px;
-    margin-top: 16px;
-    border: 1px solid var(--border-color);
+    background: rgba(255, 255, 255, 0.05);
+    margin-top: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s;
 }
 
-.player-stats p {
-    margin: 8px 0;
-    font-size: 14px;
-    color: var(--text-secondary);
+.hint:active {
+    background: rgba(255, 255, 255, 0.08);
 }
 
-.stat-bar {
-    margin: 12px 0;
+.instruction-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px;
+    border-bottom: 1px solid var(--border-color);
 }
 
-.stat-bar label {
-    font-size: 14px;
-    color: var(--text-secondary);
-    margin-bottom: 4px;
-    display: block;
+.instruction-item:last-child {
+    border-bottom: none;
 }
 
-.stat-bar .bar {
-    height: 8px;
-    border-radius: 4px;
+.instruction-number {
+    width: 28px;
+    height: 28px;
     background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    flex-shrink: 0;
+    color: white;
+}
+
+.instruction-text {
+    color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.instruction-text strong {
+    color: var(--text-primary);
+    font-weight: 500;
 }
 
 /* Theme colors */
@@ -314,4 +386,37 @@ input[type="text"]::placeholder {
 * {
     transition: none !important;
     animation: none !important;
+}
+
+/* Touch feedback */
+.btn:active,
+.mode-btn:active,
+.nav-btn:active {
+    transform: scale(0.98);
+    opacity: 0.9;
+}
+
+/* Improved tap targets */
+.nav-btn,
+.btn,
+.mode-btn {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    min-height: 48px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 1px var(--primary-color);
+}
+
+.btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btn:disabled:active {
+    transform: none;
 }

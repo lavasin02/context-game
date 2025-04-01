@@ -353,12 +353,27 @@ function updateDisplay() {
                 <strong>${guess.player.name}</strong>
                 <br>
                 <small>${GAME_MODES[currentMode].playerDisplay(guess.player)}</small>
-                ${hint ? `<br><small class="hint">💡 Hint: ${hint}</small>` : ''}
+                ${hint ? `<br><div class="hint" role="button" tabindex="0">💡 Hint: ${hint}</div>` : ''}
             </div>
-            <div class="feedback-number" data-score="${scoreCategory}">${guess.score}</div>
+            <div class="feedback-number" data-score="${scoreCategory}" role="button" tabindex="0">${guess.score}</div>
         `;
+
+        // Add touch feedback for hint expansion
+        const hintElement = guessItem.querySelector('.hint');
+        if (hintElement) {
+            hintElement.addEventListener('click', function() {
+                this.style.height = this.style.height === 'auto' ? null : 'auto';
+            });
+        }
+
         guessesList.appendChild(guessItem);
     });
+
+    // Scroll to the latest guess
+    const latestGuess = guessesList.lastElementChild;
+    if (latestGuess) {
+        latestGuess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
 }
 
 function endGame(won) {
@@ -523,6 +538,7 @@ function shareScore() {
 function updateGameStatus(similarity) {
     const feedback = document.createElement('div');
     feedback.className = 'game-feedback';
+    feedback.setAttribute('role', 'alert');
     
     let message;
     if (similarity === 1) {
@@ -538,8 +554,15 @@ function updateGameStatus(similarity) {
     }
     
     feedback.innerHTML = message;
-    document.querySelector('.guess-section').appendChild(feedback);
-    setTimeout(() => feedback.remove(), 2000);
+    document.body.appendChild(feedback);
+    
+    // Add touch feedback
+    feedback.addEventListener('click', () => feedback.remove());
+    
+    setTimeout(() => {
+        feedback.style.opacity = '0';
+        setTimeout(() => feedback.remove(), 200);
+    }, 1800);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -564,4 +587,45 @@ document.addEventListener('DOMContentLoaded', () => {
             goBack();
         }
     });
+
+    // Prevent double-tap zoom on buttons
+    document.querySelectorAll('.btn, .mode-btn, .nav-btn').forEach(button => {
+        button.addEventListener('touchend', (e) => {
+            e.preventDefault();
+            e.target.click();
+        });
+    });
+
+    // Add touch feedback for guess input
+    const guessInput = document.getElementById('player-guess');
+    if (guessInput) {
+        guessInput.addEventListener('focus', () => {
+            guessInput.style.borderColor = 'var(--primary-color)';
+        });
+        guessInput.addEventListener('blur', () => {
+            guessInput.style.borderColor = 'var(--border-color)';
+        });
+    }
+
+    // Improve scroll experience
+    const historyBox = document.querySelector('.history-box');
+    if (historyBox) {
+        let touchStartY = 0;
+        historyBox.addEventListener('touchstart', (e) => {
+            touchStartY = e.touches[0].clientY;
+        });
+        historyBox.addEventListener('touchmove', (e) => {
+            const touchY = e.touches[0].clientY;
+            const scrollTop = historyBox.scrollTop;
+            const scrollHeight = historyBox.scrollHeight;
+            const clientHeight = historyBox.clientHeight;
+
+            if (scrollTop <= 0 && touchY > touchStartY) {
+                e.preventDefault();
+            }
+            if (scrollTop + clientHeight >= scrollHeight && touchY < touchStartY) {
+                e.preventDefault();
+            }
+        });
+    }
 });
