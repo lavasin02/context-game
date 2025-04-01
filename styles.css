@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
 }
 
 :root {
@@ -26,221 +28,101 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    touch-action: manipulation;
+    overflow-x: hidden;
+    will-change: transform;
 }
 
 .container {
-    flex: 1;
-    width: 100%;
-    margin: 0 auto;
-    background: var(--gradient-dark);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    box-shadow: var(--shadow-lg);
-}
-
-.nav-bar {
-    padding: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(18, 18, 18, 0.8);
-    backdrop-filter: blur(20px);
-    box-shadow: var(--shadow-sm);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: var(--shadow-sm);
-    backdrop-filter: blur(10px);
-}
-
-.nav-btn {
-    background: none;
-    border: none;
-    color: var(--text-primary);
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
-    font-size: 20px;
-    transition: all 0.3s ease;
-}
-
-.nav-btn:hover {
-    color: var(--primary-color);
-    transform: scale(1.1);
-}
-
-h1 {
-    font-size: 20px;
-    font-weight: 600;
-}
-
-h2 {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: var(--text-primary);
-}
-
-.screen {
-    flex: 1;
-    padding: 20px;
-    display: none;
-    min-height: calc(100vh - 73px);
-}
-
-.screen.active {
-    display: flex;
-    flex-direction: column;
-}
-
-.mode-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin: 0;
-    flex: 1;
-}
-
-.mode-btn {
-    width: 100%;
-    padding: 16px;
-    background: var(--gradient-dark);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    color: var(--text-primary);
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    box-shadow: var(--shadow-sm);
-    transition: all 0.3s ease;
-    overflow: hidden;
-    position: relative;
-}
-
-.mode-btn::before {
-    content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: var(--gradient-primary);
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: contain;
+    transform: translateZ(0);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: contain;
+    transform: translateZ(0);
 }
 
-.mode-btn:hover::before {
-    opacity: 0.1;
-}
-
-.mode-btn:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-md), 0 0 20px var(--glow-color);
-    border-color: var(--primary-color);
-}
-
-.mode-btn span {
-    background: var(--gradient-primary);
-    box-shadow: var(--shadow-sm);
-    z-index: 1;
-}
-
-.mode-btn div {
-    text-align: left;
-}
-
-.mode-btn strong {
-    display: block;
-    font-size: 16px;
-    margin-bottom: 4px;
-}
-
-.mode-btn small {
-    color: var(--text-secondary);
-    font-size: 14px;
-}
-
-.game-rules {
-    margin: 0 0 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.instruction-item {
-    background: rgba(26, 26, 26, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: var(--shadow-sm);
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transform: translateZ(0);
 }
 
-.instruction-number {
-    width: 24px;
-    height: 24px;
-    font-size: 14px;
-    background: var(--gradient-primary);
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: 500;
-    box-shadow: var(--shadow-sm);
-    box-shadow: var(--shadow-sm), 0 0 10px var(--glow-color);
+.screen {
+    min-height: calc(100vh - 73px);
+    overscroll-behavior: contain;
+    transform: translateZ(0);
 }
 
-.instruction-text {
-    flex: 1;
-    font-size: 15px;
-    color: var(--text-secondary);
-    line-height: 1.5;
+.history-box {
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    transform: translateZ(0);
+    height: calc(100vh - 300px);
+    position: relative;
 }
 
-.instruction-text strong {
-    color: var(--text-primary);
+.guess-item {
+    transform: translateZ(0);
+    will-change: transform;
+    transition: transform 0.2s ease;
+    touch-action: pan-y;
 }
 
-#game-status {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-bottom: 20px;
+.btn, .mode-btn, .nav-btn {
+    transform: translateZ(0);
+    will-change: transform;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.status-item {
-    background: var(--gradient-dark);
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.game-feedback {
+    transform: translateZ(0);
+    will-change: transform, opacity;
+}
+
+.btn, .mode-btn, .nav-btn {
+    min-height: 44px;
+    padding: 12px 16px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.hint {
     padding: 12px;
-    border-radius: 12px;
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: var(--shadow-sm);
+    margin: 8px 0;
+    cursor: pointer;
+    touch-action: manipulation;
 }
 
-.status-label {
-    font-size: 14px;
-    color: var(--text-secondary);
-    margin-bottom: 4px;
-}
-
-.status-value {
-    font-size: 24px;
-    font-weight: 600;
-}
-
-.guess-section {
-    margin-bottom: 20px;
+.history-box::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }
 
 input[type="text"] {
-    width: 100%;
-    padding: 14px 16px;
+    -webkit-appearance: none;
+    appearance: none;
     font-size: 16px;
-    background: rgba(26, 26, 26, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    color: var(--text-primary);
-    margin-bottom: 12px;
-    transition: all 0.3s ease;
+    touch-action: manipulation;
 }
 
 input[type="text"]:focus {

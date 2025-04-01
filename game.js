@@ -322,58 +322,47 @@ function handleSearch(event) {
 function updateDisplay() {
     if (!game) return;
     
-    document.getElementById('tries-left').textContent = game.triesLeft;
-    document.getElementById('guess-number').textContent = game.currentGuessNumber;
-    
-    const guessesList = document.getElementById('guesses-list');
-    guessesList.innerHTML = '';
-    
-    game.guessHistory.forEach((guess, index) => {
-        const guessItem = document.createElement('div');
-        guessItem.className = 'guess-item';
+    requestAnimationFrame(() => {
+        document.getElementById('tries-left').textContent = game.triesLeft;
+        document.getElementById('guess-number').textContent = game.currentGuessNumber;
         
-        const hint = game.getHint(index + 1);
+        const guessesList = document.getElementById('guesses-list');
+        const fragment = document.createDocumentFragment();
         
-        // Determine score category
-        let scoreCategory;
-        if (guess.score === 1) {
-            scoreCategory = "1";
-        } else if (guess.score < 20) {
-            scoreCategory = "close";
-        } else if (guess.score < 40) {
-            scoreCategory = "warm";
-        } else if (guess.score < 60) {
-            scoreCategory = "cold";
-        } else {
-            scoreCategory = "far";
+        game.guessHistory.forEach((guess, index) => {
+            const guessItem = document.createElement('div');
+            guessItem.className = 'guess-item';
+            
+            const hint = game.getHint(index + 1);
+            let scoreCategory;
+            if (guess.score === 1) scoreCategory = "1";
+            else if (guess.score < 20) scoreCategory = "close";
+            else if (guess.score < 40) scoreCategory = "warm";
+            else if (guess.score < 60) scoreCategory = "cold";
+            else scoreCategory = "far";
+            
+            guessItem.innerHTML = `
+                <div class="guess-item-content">
+                    <strong>${guess.player.name}</strong>
+                    <br>
+                    <small>${GAME_MODES[currentMode].playerDisplay(guess.player)}</small>
+                    ${hint ? `<br><div class="hint" role="button" tabindex="0">💡 Hint: ${hint}</div>` : ''}
+                </div>
+                <div class="feedback-number" data-score="${scoreCategory}">${guess.score}</div>
+            `;
+            
+            fragment.appendChild(guessItem);
+        });
+        
+        guessesList.innerHTML = '';
+        guessesList.appendChild(fragment);
+        
+        // Smooth scroll to latest guess
+        const latestGuess = guessesList.lastElementChild;
+        if (latestGuess) {
+            latestGuess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
-        
-        guessItem.innerHTML = `
-            <div class="guess-item-content">
-                <strong>${guess.player.name}</strong>
-                <br>
-                <small>${GAME_MODES[currentMode].playerDisplay(guess.player)}</small>
-                ${hint ? `<br><div class="hint" role="button" tabindex="0">💡 Hint: ${hint}</div>` : ''}
-            </div>
-            <div class="feedback-number" data-score="${scoreCategory}" role="button" tabindex="0">${guess.score}</div>
-        `;
-
-        // Add touch feedback for hint expansion
-        const hintElement = guessItem.querySelector('.hint');
-        if (hintElement) {
-            hintElement.addEventListener('click', function() {
-                this.style.height = this.style.height === 'auto' ? null : 'auto';
-            });
-        }
-
-        guessesList.appendChild(guessItem);
     });
-
-    // Scroll to the latest guess
-    const latestGuess = guessesList.lastElementChild;
-    if (latestGuess) {
-        latestGuess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }
 }
 
 function endGame(won) {
@@ -566,66 +555,47 @@ function updateGameStatus(similarity) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Add search functionality
-    const playerGuessInput = document.getElementById('player-guess');
-    if (playerGuessInput) {
-        playerGuessInput.addEventListener('input', handleSearch);
-    }
-
-    // Add button hover sounds
-    document.querySelectorAll('.btn').forEach(button => {
-        button.addEventListener('mouseenter', () => playSound('hover'));
-        button.addEventListener('click', () => playSound('click'));
-    });
-
-    // Add keyboard shortcuts
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' && document.getElementById('player-guess') === document.activeElement) {
-            submitGuess();
-        }
-        if (e.key === 'Escape') {
-            goBack();
-        }
-    });
-
-    // Prevent double-tap zoom on buttons
-    document.querySelectorAll('.btn, .mode-btn, .nav-btn').forEach(button => {
-        button.addEventListener('touchend', (e) => {
-            e.preventDefault();
-            e.target.click();
-        });
-    });
-
-    // Add touch feedback for guess input
-    const guessInput = document.getElementById('player-guess');
-    if (guessInput) {
-        guessInput.addEventListener('focus', () => {
-            guessInput.style.borderColor = 'var(--primary-color)';
-        });
-        guessInput.addEventListener('blur', () => {
-            guessInput.style.borderColor = 'var(--border-color)';
-        });
-    }
-
-    // Improve scroll experience
+    let touchStartY = 0;
+    let touchStartTime = 0;
     const historyBox = document.querySelector('.history-box');
+    
     if (historyBox) {
-        let touchStartY = 0;
         historyBox.addEventListener('touchstart', (e) => {
             touchStartY = e.touches[0].clientY;
-        });
+            touchStartTime = Date.now();
+        }, { passive: true });
+        
         historyBox.addEventListener('touchmove', (e) => {
             const touchY = e.touches[0].clientY;
             const scrollTop = historyBox.scrollTop;
             const scrollHeight = historyBox.scrollHeight;
             const clientHeight = historyBox.clientHeight;
-
-            if (scrollTop <= 0 && touchY > touchStartY) {
+            
+            // Only prevent default if at boundaries
+            if ((scrollTop <= 0 && touchY > touchStartY) ||
+                (scrollTop + clientHeight >= scrollHeight && touchY < touchStartY)) {
                 e.preventDefault();
             }
-            if (scrollTop + clientHeight >= scrollHeight && touchY < touchStartY) {
-                e.preventDefault();
-            }
-        });
+        }, { passive: false });
+    }
+    
+    const buttons = document.querySelectorAll('.btn, .mode-btn, .nav-btn');
+    buttons.forEach(button => {
+        button.addEventListener('touchstart', () => {
+            button.style.transform = 'scale(0.98)';
+        }, { passive: true });
+        
+        button.addEventListener('touchend', () => {
+            button.style.transform = '';
+        }, { passive: true });
+    });
+    
+    const guessInput = document.getElementById('player-guess');
+    if (guessInput) {
+        let debounceTimeout;
+        guessInput.addEventListener('input', (e) => {
+            clearTimeout(debounceTimeout);
+            debounceTimeout = setTimeout(() => handleSearch(e), 150);
+        }, { passive: true });
     }
 });
