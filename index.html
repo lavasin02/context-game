@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Player & Actor Guesser! 🎮</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Player & Actor Guesser! 🎭</h1>
+        
+        <div id="mode-select" class="screen active">
+            <h2>Choose Your Adventure! ✨</h2>
+            <div class="mode-buttons">
+                <button onclick="selectMode('football')" class="btn mode-btn">
+                    <span>⚽</span>
+                    Football Stars
+                </button>
+                <button onclick="selectMode('cricket')" class="btn mode-btn">
+                    <span>🏏</span>
+                    Cricket Heroes
+                </button>
+                <button onclick="selectMode('bollywood')" class="btn mode-btn">
+                    <span>🎬</span>
+                    Bollywood Magic
+                </button>
+            </div>
+        </div>
+
+        <div id="game-start" class="screen">
+            <p id="game-intro">🤔 I'm thinking of someone special...</p>
+            <p>After each guess, you'll get a magic number:</p>
+            <ul>
+                <li>🌟 1 = Perfect match! You win!</li>
+                <li>🎯 Higher numbers = Keep trying, you're getting closer!</li>
+                <li>✨ The number is based on:</li>
+                <div id="scoring-criteria"></div>
+            </ul>
+            <button onclick="startGame()" class="btn">Start the Adventure! 🚀</button>
+        </div>
+
+        <div id="game-play" class="screen">
+            <div id="game-status">
+                <p>Tries left: <span id="tries-left">10</span></p>
+                <p>Guess #<span id="guess-number">1</span></p>
+            </div>
+            
+            <div class="guess-section">
+                <label for="player-guess">Type at least 3 letters to search for a player:</label>
+                <input type="text" 
+                       id="player-guess" 
+                       list="players-list" 
+                       placeholder="Type player name..."
+                       autocomplete="off">
+                <datalist id="players-list"></datalist>
+                <button onclick="submitGuess()" class="btn">Submit Guess</button>
+            </div>
+
+            <div id="guess-history" class="history-box">
+                <h3>Previous Guesses</h3>
+                <div id="guesses-list"></div>
+            </div>
+        </div>
+
+        <div id="game-over" class="screen">
+            <h2 id="result-message"></h2>
+            <div id="correct-answer"></div>
+            <div class="end-buttons">
+                <button onclick="showModeSelect()" class="btn">Change Mode</button>
+                <button onclick="startGame()" class="btn">Play Again</button>
+            </div>
+        </div>
+    </div>
+    <script src="fifa_data.js"></script>
+    <script src="cricket_data.js"></script>
+    <script src="bollywood_data.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
