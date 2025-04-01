@@ -22,343 +22,196 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .container {
     flex: 1;
-    max-width: 100%;
     width: 100%;
     margin: 0 auto;
     background: var(--card-bg);
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    position: relative;
 }
 
 .nav-bar {
-    padding: 16px;
+    padding: 12px 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--border-color);
     background: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
     position: sticky;
     top: 0;
     z-index: 100;
-}
-
-.nav-btn {
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: var(--text-primary);
-    width: 48px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-h1 {
-    font-size: 20px;
-    font-weight: 600;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .screen {
     flex: 1;
     padding: 16px;
     display: none;
+    min-height: calc(100vh - 60px);
 }
 
 .screen.active {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .mode-buttons {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin: 20px 0;
+    margin: 12px 0;
+    flex: 1;
 }
 
 .mode-btn {
-    width: 100%;
-    padding: 16px;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    border-radius: 12px;
-    background: var(--input-bg);
+    background: linear-gradient(to right, var(--input-bg), var(--card-bg));
     border: 1px solid var(--border-color);
-    color: var(--text-primary);
-    min-height: 60px;
-    position: relative;
-    overflow: hidden;
-}
-
-.mode-btn::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
-    transform: translate(-50%, -50%) scale(0);
-    opacity: 0;
-    pointer-events: none;
-}
-
-.mode-btn:active::after {
-    transform: translate(-50%, -50%) scale(2);
-    opacity: 1;
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-}
-
-.mode-btn:active {
-    transform: scale(0.98);
-    opacity: 0.9;
-}
-
-.mode-btn span {
-    font-size: 24px;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .game-rules {
+    margin: 16px 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.instruction-item {
     background: var(--input-bg);
-    padding: 20px;
-    border-radius: 12px;
-    margin: 20px 0;
     border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
-.game-rules li {
-    margin: 12px 0;
-    padding-left: 24px;
-    position: relative;
-    color: var(--text-secondary);
-}
-
-.game-rules li::before {
-    content: "•";
-    position: absolute;
-    left: 8px;
+.instruction-number {
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    background: var(--primary-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 #game-status {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-bottom: 16px;
-}
-
-.status-item {
-    background: var(--input-bg);
-    padding: 12px;
-    border-radius: 12px;
-    text-align: center;
-    border: 1px solid var(--border-color);
-}
-
-.status-label {
-    font-size: 14px;
-    color: var(--text-secondary);
-    margin-bottom: 4px;
-}
-
-.status-value {
-    font-size: 24px;
-    font-weight: 600;
-}
-
-input[type="text"] {
-    width: 100%;
-    padding: 16px;
-    font-size: 16px;
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
-    background: var(--input-bg);
-    color: var(--text-primary);
     margin-bottom: 12px;
 }
 
-input[type="text"]::placeholder {
-    color: var(--text-secondary);
+.status-item {
+    background: linear-gradient(to bottom, var(--input-bg), var(--card-bg));
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.guess-section {
+    margin: 12px 0;
+}
+
+input[type="text"] {
+    background: linear-gradient(to bottom, var(--input-bg), var(--card-bg));
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+    margin-bottom: 8px;
 }
 
 .btn {
-    width: 100%;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    border-radius: 12px;
-    background: var(--primary-color);
-    color: white;
-    font-weight: 500;
-    margin: 8px 0;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 4px 0;
+    font-weight: 600;
 }
 
 .history-box {
-    background: var(--input-bg);
-    border-radius: 12px;
-    margin: 16px 0;
-    border: 1px solid var(--border-color);
     flex: 1;
-    overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-    overscroll-behavior: contain;
-    padding: 8px;
+    margin: 12px 0;
+    padding: 0;
+    background: linear-gradient(to bottom, var(--input-bg), var(--card-bg));
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .guess-item {
     padding: 16px;
+    background: transparent;
     border-bottom: 1px solid var(--border-color);
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    position: relative;
-    overflow: hidden;
-}
-
-.guess-item-content {
-    flex: 1;
-}
-
-.guess-item:last-child {
-    border-bottom: none;
-}
-
-.guess-item:active {
-    background: rgba(255, 255, 255, 0.03);
 }
 
 .feedback-number {
-    font-size: 24px;
-    font-weight: 700;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    user-select: none;
-    -webkit-user-select: none;
-    cursor: pointer;
-}
-
-.feedback-number[data-score="1"] {
-    background: #4CAF50;
-    box-shadow: 0 0 15px rgba(76, 175, 80, 0.3);
-}
-
-.feedback-number[data-score="close"] {
-    background: #FF9800;
-    box-shadow: 0 0 10px rgba(255, 152, 0, 0.2);
-}
-
-.feedback-number[data-score="warm"] {
-    background: #FFC107;
-    box-shadow: 0 0 10px rgba(255, 193, 7, 0.2);
-}
-
-.feedback-number[data-score="cold"] {
-    background: #90A4AE;
-    box-shadow: 0 0 10px rgba(144, 164, 174, 0.2);
-}
-
-.feedback-number[data-score="far"] {
-    background: #607D8B;
-    box-shadow: 0 0 10px rgba(96, 125, 139, 0.2);
-}
-
-.feedback-number:active {
-    transform: scale(0.95);
-}
-
-.game-feedback {
-    position: fixed;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 12px 24px;
-    border-radius: 24px;
-    font-weight: 500;
-    z-index: 1000;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    width: 52px;
+    height: 52px;
+    font-size: 22px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .hint {
-    position: relative;
-    padding: 12px;
-    border-radius: 12px;
-    background: rgba(255, 255, 255, 0.05);
-    margin-top: 12px;
-    cursor: pointer;
-    transition: background-color 0.2s;
+    background: linear-gradient(to right, rgba(255,255,255,0.05), transparent);
+    padding: 12px 16px;
+    margin-top: 8px;
+    border-radius: 8px;
 }
 
-.hint:active {
-    background: rgba(255, 255, 255, 0.08);
+.game-feedback {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    padding: 12px 24px;
+    border-radius: 24px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
-.instruction-item {
+.player-reveal {
+    background: linear-gradient(to bottom, var(--input-bg), var(--card-bg));
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.stat-bar .bar {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#game-over {
+    text-align: center;
+}
+
+#result-message {
+    font-size: 24px;
+    margin: 24px 0;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.end-buttons {
     display: flex;
-    align-items: flex-start;
-    gap: 16px;
-    padding: 16px;
-    border-bottom: 1px solid var(--border-color);
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 24px;
 }
 
-.instruction-item:last-child {
-    border-bottom: none;
+.theme-football .btn,
+.theme-football .mode-btn:active {
+    background: linear-gradient(to right, #4CAF50, #388E3C);
 }
 
-.instruction-number {
-    width: 28px;
-    height: 28px;
-    background: var(--primary-color);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 600;
-    flex-shrink: 0;
-    color: white;
+.theme-cricket .btn,
+.theme-cricket .mode-btn:active {
+    background: linear-gradient(to right, #2196F3, #1976D2);
 }
 
-.instruction-text {
-    color: var(--text-secondary);
-    font-size: 16px;
-    line-height: 1.5;
+.theme-bollywood .btn,
+.theme-bollywood .mode-btn:active {
+    background: linear-gradient(to right, #F44336, #D32F2F);
 }
 
-.instruction-text strong {
-    color: var(--text-primary);
-    font-weight: 500;
-}
-
-/* Theme colors */
-.theme-football {
-    --primary-color: #4CAF50;
-    --secondary-color: #388E3C;
-}
-
-.theme-cricket {
-    --primary-color: #2196F3;
-    --secondary-color: #1976D2;
-}
-
-.theme-bollywood {
-    --primary-color: #F44336;
-    --secondary-color: #D32F2F;
-}
-
-/* Desktop adjustments */
 @media (min-width: 768px) {
     .container {
         max-width: 480px;
@@ -367,7 +220,6 @@ input[type="text"]::placeholder {
     }
 }
 
-/* iOS Safe Area */
 @supports (padding: max(0px)) {
     .nav-bar {
         padding-top: max(16px, env(safe-area-inset-top));
@@ -382,13 +234,11 @@ input[type="text"]::placeholder {
     }
 }
 
-/* Remove animations */
 * {
     transition: none !important;
     animation: none !important;
 }
 
-/* Touch feedback */
 .btn:active,
 .mode-btn:active,
 .nav-btn:active {
@@ -396,7 +246,6 @@ input[type="text"]::placeholder {
     opacity: 0.9;
 }
 
-/* Improved tap targets */
 .nav-btn,
 .btn,
 .mode-btn {

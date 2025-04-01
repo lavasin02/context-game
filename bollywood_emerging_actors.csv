@@ -1,0 +1,21 @@
+name,role,nationality,popularity,performance,versatility,experience,box_office,star_power,achievements,movie_count,rating_sum,google_hits
+Sara Ali Khan,Actor,Indian,85,80,45,40,75,82,"['10 Movies', '900 Total Rating Points', '#50 in Rankings']",10,900,3000000
+Janhvi Kapoor,Actor,Indian,84,82,48,42,72,83,"['12 Movies', '950 Total Rating Points', '#45 in Rankings']",12,950,3100000
+Ishaan Khatter,Actor,Indian,80,85,50,38,70,80,"['10 Movies', '850 Total Rating Points', '#60 in Rankings']",10,850,2500000
+Tara Sutaria,Actor,Indian,78,75,42,35,65,78,"['8 Movies', '700 Total Rating Points', '#70 in Rankings']",8,700,2200000
+Ananya Panday,Actor,Indian,82,77,40,36,70,80,"['10 Movies', '800 Total Rating Points', '#55 in Rankings']",10,800,2800000
+Ahan Shetty,Actor,Indian,75,72,45,32,68,75,"['5 Movies', '600 Total Rating Points', '#80 in Rankings']",5,600,2000000
+Manushi Chhillar,Actor,Indian,77,74,40,34,65,76,"['6 Movies', '650 Total Rating Points', '#75 in Rankings']",6,650,2300000
+Shalini Pandey,Actor,Indian,76,78,46,35,60,74,"['5 Movies', '620 Total Rating Points', '#85 in Rankings']",5,620,2100000
+Triptii Dimri,Actor,Indian,88,87,52,38,78,85,"['10 Movies', '1000 Total Rating Points', '#30 in Rankings']",10,1000,2900000
+Alaya F,Actor,Indian,79,76,44,34,62,77,"['6 Movies', '680 Total Rating Points', '#65 in Rankings']",6,680,2400000
+Suhana Khan,Actor,Indian,80,75,40,20,70,82,"['2 Movies', '300 Total Rating Points', '#90 in Rankings']",2,300,2600000
+Khushi Kapoor,Actor,Indian,78,74,42,22,68,80,"['2 Movies', '320 Total Rating Points', '#88 in Rankings']",2,320,2500000
+Agastya Nanda,Actor,Indian,77,76,45,22,65,78,"['2 Movies', '310 Total Rating Points', '#92 in Rankings']",2,310,2400000
+Vedang Raina,Actor,Indian,76,75,43,20,60,76,"['2 Movies', '290 Total Rating Points', '#95 in Rankings']",2,290,2300000
+Rasha Thadani,Actor,Indian,80,73,40,18,70,80,"['1 Movie', '150 Total Rating Points', '#98 in Rankings']",1,150,2700000
+Aaman Devgan,Actor,Indian,79,74,42,18,72,81,"['1 Movie', '160 Total Rating Points', '#97 in Rankings']",1,160,2600000
+Ibrahim Ali Khan,Actor,Indian,82,75,41,18,75,83,"['1 Movie', '170 Total Rating Points', '#96 in Rankings']",1,170,2800000
+Shanaya Kapoor,Actor,Indian,81,73,40,18,70,82,"['1 Movie', '150 Total Rating Points', '#99 in Rankings']",1,150,2700000
+Simar Bhatia,Actor,Indian,78,72,42,18,68,79,"['1 Movie', '140 Total Rating Points', '#100 in Rankings']",1,140,2500000
+Nitanshi Goel,Actor,Indian,85,88,50,20,75,84,"['3 Movies', '400 Total Rating Points', '#40 in Rankings']",3,400,2600000

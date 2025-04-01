@@ -1,0 +1,21 @@
+name,role,nationality,popularity,performance,versatility,experience,box_office,star_power,achievements,movie_count,rating_sum,google_hits
+Shah Rukh Khan,Actor,Indian,95,88,55,85,92,94,"['Over 100 Movies', '3200 Total Rating Points', '#1 in Rankings']",105,3200,5200000
+Priyanka Chopra,Actor,Indian,90,85,50,75,70,88,"['50 Movies', '2500 Total Rating Points', '#20 in Rankings']",50,2500,4000000
+Amitabh Bachchan,Actor,Indian,92,90,60,95,85,90,"['Over 200 Movies', '3500 Total Rating Points', '#3 in Rankings']",205,3500,4800000
+Deepika Padukone,Actor,Indian,89,87,48,68,85,87,"['45 Movies', '2300 Total Rating Points', '#10 in Rankings']",45,2300,3500000
+Salman Khan,Actor,Indian,93,78,45,82,90,92,"['Over 110 Movies', '2800 Total Rating Points', '#5 in Rankings']",110,2800,5000000
+Aishwarya Rai,Actor,Indian,85,82,50,72,68,83,"['55 Movies', '2100 Total Rating Points', '#25 in Rankings']",55,2100,3700000
+Akshay Kumar,Actor,Indian,88,80,62,80,88,85,"['Over 140 Movies', '2900 Total Rating Points', '#8 in Rankings']",140,2900,4200000
+Kareena Kapoor,Actor,Indian,84,79,46,70,75,82,"['65 Movies', '2000 Total Rating Points', '#30 in Rankings']",65,2000,3000000
+Ranbir Kapoor,Actor,Indian,87,86,52,62,80,86,"['35 Movies', '1900 Total Rating Points', '#15 in Rankings']",35,1900,3100000
+Alia Bhatt,Actor,Indian,90,88,50,58,84,89,"['30 Movies', '1800 Total Rating Points', '#12 in Rankings']",30,1800,3400000
+Hrithik Roshan,Actor,Indian,86,85,55,65,82,87,"['40 Movies', '2200 Total Rating Points', '#18 in Rankings']",40,2200,3200000
+Katrina Kaif,Actor,Indian,85,75,40,68,78,84,"['50 Movies', '2000 Total Rating Points', '#35 in Rankings']",50,2000,2900000
+Aamir Khan,Actor,Indian,88,92,60,78,85,90,"['55 Movies', '2700 Total Rating Points', '#7 in Rankings']",55,2700,4500000
+Anushka Sharma,Actor,Indian,83,80,48,60,72,82,"['30 Movies', '1700 Total Rating Points', '#40 in Rankings']",30,1700,2800000
+Ranveer Singh,Actor,Indian,87,84,58,55,80,85,"['25 Movies', '1600 Total Rating Points', '#22 in Rankings']",25,1600,3000000
+Varun Dhawan,Actor,Indian,85,78,50,52,78,83,"['25 Movies', '1500 Total Rating Points', '#45 in Rankings']",25,1500,2700000
+Shahid Kapoor,Actor,Indian,84,83,52,60,75,82,"['40 Movies', '1800 Total Rating Points', '#28 in Rankings']",40,1800,2900000
+Madhuri Dixit,Actor,Indian,82,85,45,75,70,80,"['80 Movies', '2300 Total Rating Points', '#50 in Rankings']",80,2300,3100000
+Ajay Devgn,Actor,Indian,86,82,55,78,85,84,"['Over 100 Movies', '2600 Total Rating Points', '#14 in Rankings']",105,2600,3800000
+Kajol,Actor,Indian,83,87,48,70,72,83,"['50 Movies', '2100 Total Rating Points', '#32 in Rankings']",50,2100,3300000
